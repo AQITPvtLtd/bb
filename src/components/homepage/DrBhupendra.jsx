@@ -7,7 +7,7 @@ const DrBhupendra = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 items-center">
         <div className="lg:col-start-2 lg:col-span-4 flex justify-center sm:justify-start">
           <Image
-            src={"/drBhupendra/Dr-Bhupendra-Bharti.jpg"}
+            src={"/drBhupendra/Dr_Bhupendra-Bharti.jpg"}
             width={500}
             height={500}
             alt="Dr. Bhupendra Pratap Bharti"

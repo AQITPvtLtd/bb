@@ -196,7 +196,7 @@ const menuData = [
         id: 421,
         title: "Kyphoplasty",
         newTab: false,
-        path: "/conditions_treated/craniovertebral"
+        path: "/conditions_treated/kyphoplasty"
       },
 
       {
