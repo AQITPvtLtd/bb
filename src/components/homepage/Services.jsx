@@ -54,7 +54,7 @@ const Services = () => {
                     width={1000}
                     height={1000}
                     className="w-full h-[200px] sm:h-[250px] object-cover rounded-t-lg"
-                    src={`/services/${s.image}`}
+                    src={`/Services/${s.image}`}
                     alt={s.name}
                   />
                   <div className="p-6 sm:p-10">
