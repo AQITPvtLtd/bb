@@ -115,7 +115,6 @@ const Knowdoctor = () => {
       title: "Publications",
       content: [""],
     },
-
     {
       headingId: "accordion-flush-heading-3",
       bodyId: "accordion-flush-body-3",
@@ -126,18 +125,18 @@ const Knowdoctor = () => {
 
   return (
     <div className="mt-[200px]">
-      <div className="container mx-auto mt-16 px-4 bg-[#07a496]">
+      <div className="container mx-auto mt-16 px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 p-8 rounded-lg shadow-lg">
-          <div className="w-full lg:w-1/2 text-white">
+          <div className="w-full lg:w-1/2">
             <h1 className="text-3xl font-bold">Dr. Bhupendra Pratap Bharti</h1>
             <p className="text-xl mt-2">Consultant</p>
             <p className="text-xl">Orthopedic Spine Surgery</p>
             <p className="text-xl">BLK Superspeciality Hospital, New Delhi</p>
 
-            <h2 className="mt-8 text-2xl font-semibold text-white">
+            <h2 className="mt-8 text-2xl font-semibold">
               Qualification
             </h2>
-            <ul className="list-disc pl-6 text-lg mt-4 text-white space-y-2">
+            <ul className="list-disc pl-6 text-lg mt-4 space-y-2">
               <li>MBBS</li>
               <li>MS (Orthopaedic)</li>
               <li>Spine Fellowship - Indian Spinal Injuries Centre, India</li>
@@ -147,13 +146,13 @@ const Knowdoctor = () => {
             </ul>
           </div>
 
-          <div className="w-full lg:w-1/2 flex justify-center">
+          <div className="w-full lg:w-1/2 flex justify-center shadow-2xl">
             <Image
               src="/drBhupendra/Dr_Bhupendra.jpg"
               width={500}
               height={500}
               alt="Dr. Bhupendra Pratap Bharti"
-              className="rounded-lg shadow-md object-cover"
+              className="rounded-lg object-cover"
             />
           </div>
         </div>

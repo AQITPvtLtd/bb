@@ -59,15 +59,14 @@ const Contact = () => {
             Consultant Institute for Bone, Joint Replacement, Orthopedics Spine
             & Sports Medicine
           </p>
-          <p className="text-gray-800">
+          {/* <p className="text-gray-800">
             BLK Superspeciality Hospital, New Delhi
-          </p>
+          </p> */}
 
           <div className="flex items-start space-x-2 text-gray-700">
             <FaLocationDot className="mt-1 text-xl" />
             <p className="text-base">
-              Pusa Road, Near Radha Soami Satsang Rajendra Place, New Delhi,
-              Delhi - 110005
+            Max Super Speciality Hospital, 108A, IP Ext, I.P.Extension, Patparganj, Delhi, 110092
             </p>
           </div>
 

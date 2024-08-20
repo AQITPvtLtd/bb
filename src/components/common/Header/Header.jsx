@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <div
-      className={`overflow-x-clip header left-0 z-40 top-0 w-full items-center bg-gradient-to-r font-semibold from-white to-secondary ${
+      className={`overflow-x-clip header left-0 top-0 w-full items-center bg-gradient-to-r font-semibold from-white to-secondary ${
         sticky
           ? "fixed z-[9999] bg-white shadow-sticky backdrop-blur-sm transition"
           : "absolute bg-transparent"
@@ -51,7 +51,7 @@ const Header = () => {
             <Link
               href="/"
               className={`header-logo block w-full ${
-                sticky ? "py-5 lg:py-2" : ""
+                sticky ? "py-5" : ""
               }`}
             >
               <Image
