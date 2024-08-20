@@ -11,7 +11,7 @@ import { IoTimerSharp } from "react-icons/io5";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
-// import Link from "next/link";
+
 const Contact = () => {
   const router = useRouter();
   const [formData, setformData] = useState({
@@ -31,14 +31,10 @@ const Contact = () => {
 
     if (response.success) {
       Swal.fire({
-        title: "Form Sumbitted Successfully!",
+        title: "Form Submitted Successfully!",
         text: "You clicked the button!",
         icon: "success",
       });
-
-      // Swal(response.message, {
-      //   position: "top-center",
-      // });
       router.push("/");
     } else {
       Swal.fire({
@@ -46,19 +42,16 @@ const Contact = () => {
         title: "Oops...",
         text: "Something went wrong!",
       });
-      // toast.error(response.message, {
-      //   position: "top-center",
-      // });
     }
   };
 
   return (
-    <div className="mt-[200px]">
+    <div className="mt-[200px] overflow-hidden">
       <h1 className="text-center font-semibold text-4xl">Get In Touch</h1>
 
-      <div className="lg:grid grid-cols-12 mt-10 gap-10 md:p-5">
+      <div className="lg:grid grid-cols-12 mt-10 gap-10 md:p-5 overflow-hidden">
         {/* <!-- First Card --> */}
-        <div className="col-start-2 col-span-5 bg-white shadow-lg rounded-lg p-8 space-y-6">
+        <div className="col-start-2 col-span-5 bg-white shadow-lg rounded-lg p-8 space-y-6 overflow-hidden">
           <h1 className="text-2xl font-semibold text-gray-800">
             Dr. Bhupendra Pratap Bharti
           </h1>
@@ -108,7 +101,7 @@ const Contact = () => {
         </div>
 
         {/* <!-- Second Card --> */}
-        <div className="col-span-5 bg-white shadow-lg rounded-lg p-8 flex flex-col items-start">
+        <div className="col-span-5 bg-white shadow-lg rounded-lg p-8 flex flex-col items-start overflow-hidden">
           <h1 className="text-2xl font-semibold text-gray-800 ">
             Noida Clinic
           </h1>
@@ -148,31 +141,31 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="lg:grid grid-cols-12 mt-5 items-center">
-        <div className="col-start-2 col-span-4 p-4 md:p-6 lg:p-8">
+      <div className="lg:grid grid-cols-12 mt-5 items-center overflow-hidden">
+        <div className="col-start-2 col-span-4 p-4 md:p-6 lg:p-8 overflow-hidden">
           <h1 className="text-3xl font-semibold text-gray-800 py-3">
             Location Map
           </h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3501.5559450879423!2d77.179242!3d28.643068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029633b6af21%3A0x9a67323b63bcc188!2sBLK-Max%20Super%20Speciality%20Hospital%20Delhi!5e0!3m2!1sen!2sin!4v1723625605448!5m2!1sen!2sin"
-            width="450"
-            height="450"
+            width="400"
+            height="400"
             style={{ border: 0 }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="rounded-xl"
           ></iframe>
         </div>
 
-        <div className="col-span-7 flex justify-center items-center py-10">
+        <div className="col-span-7 flex justify-center items-center py-10 overflow-hidden">
           <div>
             <h1 className="text-2xl font-semibold text-gray-800 py-3">
               Complete the fields below and we will follow up with you
             </h1>
 
             <form
-              className="bg-white text-gray-800 p-8 rounded-lg shadow-md w-full max-w-lg"
+              className="bg-white text-gray-800 p-8 rounded-lg shadow-md w-full max-w-lg overflow-hidden"
               onSubmit={handleSubmit}
             >
               <div className="mb-6">
