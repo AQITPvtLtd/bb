@@ -44,12 +44,10 @@ const Header = () => {
           : "absolute bg-transparent"
       }`}
     >
-      <header className="flex justify-between items-center px-6 ">
+      <header className="flex justify-between items-center px-6">
         <div className="relative flex items-center">
           {/* Logo */}
-          <div className="lg:w-[400px] w-[200px] lg:px-4">
-            {" "}
-            {/* Increased width for large devices */}
+          <div className="lg:w-[400px] w-[200px]">
             <Link
               href="/"
               className={`header-logo block w-full ${
@@ -61,7 +59,7 @@ const Header = () => {
                 alt="logo"
                 width={500}
                 height={500}
-                className="w-[200px] lg:w-[300px]" // Adjust the width for large screens
+                className="w-[200px] lg:w-[300px]"
               />
             </Link>
           </div>
@@ -90,16 +88,6 @@ const Header = () => {
               }`}
             />
           </button>
-
-          {/* Call Button on Small Screens */}
-          <div className="absolute right-20 top-1/2 transform -translate-y-1/2 lg:hidden">
-            <Link
-              href="tel:+91-9205138507"
-              className="block text-sm font-medium text-white bg-[#07a496] px-4 py-2 rounded-full"
-            >
-              Call Now
-            </Link>
-          </div>
         </div>
 
         {/* Navbar */}
@@ -121,7 +109,7 @@ const Header = () => {
                         ? "text-primary"
                         : "text-dark hover:text-primary"
                     }`}
-                    onClick={handleSubmenuItemClick} // Close the navbar when a submenu item is clicked
+                    onClick={handleSubmenuItemClick}
                   >
                     {menuItem.title}
                   </Link>
@@ -146,7 +134,7 @@ const Header = () => {
                     <div
                       className={`submenu -left-16 lg:ml-0 ml-4 rounded-sm bg-white transition-[top] duration-300 lg:absolute lg:top-[110%] lg:w-[450px] lg:shadow-lg ${
                         openIndex === index
-                          ? "lg:grid lg:grid-cols-2 p-4 gap-5 h-[300px] overflow-y-auto" // Set height and enable scrollbar
+                          ? "lg:grid lg:grid-cols-2 p-4 gap-5 lg:h-[300px] h-[300px] overflow-y-auto"
                           : "hidden"
                       }`}
                     >
@@ -166,6 +154,15 @@ const Header = () => {
                 )}
               </li>
             ))}
+            {/* Call Button */}
+            <li className="lg:hidden">
+              <Link
+                href="tel:+91-9205138507"
+                className="block text-sm font-medium text-white bg-[#07a496] px-4 py-2 rounded-full"
+              >
+                Call Now
+              </Link>
+            </li>
           </ul>
         </nav>
 

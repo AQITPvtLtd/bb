@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SpinalCanal = () => {
   return (
-    <div className="container mx-auto px-10 py-16 mt-[100px]">
+    <div className="container mx-auto px-10 py-16 mt-[180px]">
       {/* Title Section */}
       <h1 className="text-center text-4xl font-semibold bg-[#07a496] p-8 text-white rounded-md shadow-lg mb-12">
         Spinal Canal Stenosis Decompression
