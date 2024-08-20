@@ -148,8 +148,8 @@ const Contact = () => {
           </h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3501.5559450879423!2d77.179242!3d28.643068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029633b6af21%3A0x9a67323b63bcc188!2sBLK-Max%20Super%20Speciality%20Hospital%20Delhi!5e0!3m2!1sen!2sin!4v1723625605448!5m2!1sen!2sin"
-            width="400"
-            height="400"
+            width="350"
+            height="350"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
