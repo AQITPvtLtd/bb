@@ -141,9 +141,11 @@ const Header = () => {
                       </span>
                     </button>
                     <div
-                      className={`submenu -left-16 lg:ml-0 ml-4 rounded-sm bg-white transition-[top] duration-300 lg:absolute lg:top-[110%] lg:w-[450px] lg:shadow-lg ${
+                      className={`submenu -left-16 lg:ml-0 ml-4 rounded-sm bg-white transition-[top] duration-300 lg:absolute lg:top-[100%] gap-10 lg:shadow-lg overflow-x-hidden ${
                         openIndex === index
-                          ? "lg:grid lg:grid-cols-2 p-4 gap-5 lg:h-[300px] h-[300px] overflow-y-auto"
+                          ? `${
+                              menuItem.id != 5 ? "lg:grid lg:grid-cols-2" : ""
+                            } p-4 gap-5 lg:h-[300px] h-[300px] overflow-y-auto`
                           : "hidden"
                       }`}
                     >
