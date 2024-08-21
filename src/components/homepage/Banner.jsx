@@ -42,11 +42,10 @@ function Banner() {
   ];
 
   return (
-    <div className="overflow-x-hidden relative mt-[200px] bg-gradient-to-r from-[#07a496] to-[#04686e]">
+    <div className="overflow-x-hidden relative mt-[140px] bg-gradient-to-r from-[#07a496] to-[#04686e]">
       <Slider {...settings} className="p-10">
         {data.map((d, index) => (
           <div key={d.name} className="relative w-full">
-            <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             <Image
               width={1920}
               height={800}
@@ -55,7 +54,8 @@ function Banner() {
               className="w-full h-[80vh] object-cover"
             />
             {index === currentSlide && (
-              <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start p-8 text-white">
+              <div className="absolute top-44 left-5 w-auto h-auto flex flex-col justify-center items-start p-8 text-white bg-black bg-opacity-40">
+                {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
                 <h1
                   className={`text-5xl md:text-4xl font-bold mb-4 animate__animated ${
                     index === currentSlide ? "animate__fadeInDown" : ""
@@ -79,11 +79,11 @@ function Banner() {
                       Learn More
                     </button>
                   </Link>
-                    <Link href="/contactus">
-                      <button className="px-6 py-3 bg-[#07a496] text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition">
-                        Contact Us
-                      </button>
-                    </Link>
+                  <Link href="/contactus">
+                    <button className="px-6 py-3 bg-[#07a496] text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition">
+                      Contact Us
+                    </button>
+                  </Link>
                 </div>
               </div>
             )}

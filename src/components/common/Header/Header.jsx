@@ -15,7 +15,16 @@ const Header = () => {
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(window.scrollY >= 80);
+      const scrollPosition = window.scrollY;
+      if (scrollPosition >= 80) {
+        setSticky(true);
+        // Decrease navbar height on scroll
+        document.querySelector(".header").style.height = "130px";
+      } else {
+        setSticky(false);
+        // Reset navbar height when not scrolling
+        document.querySelector(".header").style.height = "auto";
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -38,7 +47,7 @@ const Header = () => {
 
   return (
     <div
-      className={`overflow-x-clip header left-0 top-0 w-full items-center bg-gradient-to-r font-semibold from-white to-secondary ${
+      className={`overflow-x-clip header left-0 top-0 w-full h-auto bg-gradient-to-r font-semibold from-white to-secondary ${
         sticky
           ? "fixed z-[9999] bg-white shadow-sticky backdrop-blur-sm transition"
           : "absolute bg-transparent"
@@ -51,7 +60,7 @@ const Header = () => {
             <Link
               href="/"
               className={`header-logo block w-full ${
-                sticky ? "py-5" : ""
+                sticky ? "py-5 lg:py-2" : ""
               }`}
             >
               <Image

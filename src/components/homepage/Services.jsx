@@ -40,9 +40,9 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-skyblue overflow-x-clip sm:p-16 lg:p-24">
+    <div className="bg-skyblue overflow-x-clip sm:p-16">
       <div className="bg-skyblue">
-        <h1 className="font-extrabold text-2xl sm:text-3xl pt-8 lg:pt-16 text-primary text-center">
+        <h1 className="font-extrabold text-2xl sm:text-3xl lg:pt-2 text-primary text-center">
           Our Services include
         </h1>
         <div className="mt-8 sm:mt-10">

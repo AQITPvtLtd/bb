@@ -146,13 +146,13 @@ const Knowdoctor = () => {
             </ul>
           </div>
 
-          <div className="w-full lg:w-1/2 flex justify-center shadow-2xl">
+          <div className="w-full lg:w-1/2 flex justify-center">
             <Image
               src="/drBhupendra/Dr_Bhupendra.jpg"
               width={500}
               height={500}
               alt="Dr. Bhupendra Pratap Bharti"
-              className="rounded-lg object-cover"
+              className="rounded-lg object-cover border-4 border-cyan-400"
             />
           </div>
         </div>
