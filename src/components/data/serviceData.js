@@ -16,7 +16,7 @@ export const servicesdata = [
   {
     id: 3,
     name: "Deformity Correction",
-    image: "Deformity.png",
+    image: "imm5.jpg",
     button: "Read More",
     link: "/special_service/spineDeformity",
   },
