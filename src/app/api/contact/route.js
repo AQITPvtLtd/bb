@@ -7,7 +7,9 @@ export async function POST(request) {
   try {
     const { name, Email, Phone, Query } = await request.json();
     const unique_id = uuid();
-     {console.log({ name, Email, Phone, Query })}
+    {
+      console.log({ name, Email, Phone, Query });
+    }
     // Insert data into the database
     await new Promise((resolve, reject) => {
       connection.query(
@@ -27,7 +29,7 @@ export async function POST(request) {
     // Send email using nodemailer
     const transporter = nodemailer.createTransport({
       service: "gmail",
-      host: "abhi.gmail.com",
+      host: "smtp.gmail.com",
       secure: true,
       auth: {
         user: process.env.MY_EMAIL,
@@ -39,7 +41,31 @@ export async function POST(request) {
       from: process.env.MY_EMAIL,
       to: process.env.MY_EMAIL,
 
-      text: `name: ${name} \nEmail: ${Email} \nPhone: ${Phone}  \nQuery: ${Query}`,
+      html: `<html lang="en">
+      <head>
+        <meta charset="utf-8">
+
+        <title>Utsao Enquiry Form</title>
+        <meta name="description" content="Utsao Enquiry Form">
+        <meta name="author" content="SitePoint">
+      <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+      </head>
+
+      <body>
+        <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';"></div>
+              <div class="container" style="margin-left: 20px;margin-right: 20px;">
+              <h3>You've got a new mail from ${name}, their email is: ✉️${Email} </h3>
+              <div style="font-size: 16px;">
+              <p>Query:</p>
+              <p>${Query}</p>
+              <br>
+              </div>
+              </div>
+      </body>
+      </html>`,
     };
 
     transporter.sendMail(mailOptions);
