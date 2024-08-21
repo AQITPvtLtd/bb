@@ -16,16 +16,22 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
+      const headerElement = document.querySelector(".header");
+    
       if (scrollPosition >= 80) {
         setSticky(true);
         // Decrease navbar height on scroll
-        document.querySelector(".header").style.height = "130px";
+        headerElement.style.height = "145px";
+        // Remove top margin
+        headerElement.style.marginTop = "-35px";
       } else {
         setSticky(false);
-        // Reset navbar height when not scrolling
-        document.querySelector(".header").style.height = "auto";
+        // Reset navbar height and margin when not scrolling
+        headerElement.style.height = "auto";
+         headerElement.style.marginTop = "initial"; // Resets to original margin
       }
     };
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -129,7 +135,7 @@ const Header = () => {
                       className="flex w-full cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                     >
                       {menuItem.title}
-                      <span className="pl-3">
+                      <span className="">
                         <svg width="25" height="24" viewBox="0 0 25 24">
                           <path
                             fillRule="evenodd"
