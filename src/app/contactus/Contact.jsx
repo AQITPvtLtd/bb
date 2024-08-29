@@ -19,7 +19,7 @@ const Contact = () => {
     Email: "",
     Phone: "",
     Query: "",
-  });
+  }); 
 
   const handleChange = (e) => {
     setformData({ ...formData, [e.target.name]: e.target.value });

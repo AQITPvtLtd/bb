@@ -28,7 +28,7 @@ const Header = () => {
         setSticky(false);
         // Reset navbar height and margin when not scrolling
         headerElement.style.height = "auto";
-         headerElement.style.marginTop = "initial"; // Resets to original margin
+        headerElement.style.marginTop = "initial"; // Resets to original margin
       }
     };
     
@@ -53,16 +53,16 @@ const Header = () => {
 
   return (
     <div
-      className={`overflow-x-clip header left-0 top-0 w-full h-auto bg-gradient-to-r font-semibold from-white to-secondary ${
+      className={`overflow-x-clip header left-0 top-0 w-full bg-gradient-to-r font-semibold from-white to-secondary ${
         sticky
           ? "fixed z-[9999] bg-white shadow-sticky backdrop-blur-sm transition"
           : "absolute bg-transparent"
       }`}
     >
-      <header className="flex justify-between items-center px-6">
+      <header className="flex justify-between items-center px-10 text-center">
         <div className="relative flex items-center">
           {/* Logo */}
-          <div className="lg:w-[400px] w-[200px]">
+          <div className="lg:w-[300px] w-[200px]">
             <Link
               href="/"
               className={`header-logo block w-full ${
@@ -149,14 +149,12 @@ const Header = () => {
                     <div
                       className={`submenu -left-16 lg:ml-0 ml-4 rounded-sm bg-white transition-[top] duration-300 lg:absolute lg:top-[100%] gap-10 lg:shadow-lg overflow-x-hidden ${
                         openIndex === index
-                          ? `${
-                              menuItem.id != 5 ? "lg:grid lg:grid-cols-2" : ""
-                            } p-4 gap-5 lg:h-[300px] h-[300px] overflow-y-auto`
+                          ? `p-4 gap-5 lg:h-[200px] h-[200px] w-[200px] overflow-y-auto`
                           : "hidden"
                       }`}
                     >
                       {menuItem.submenu?.map((submenuItem) => (
-                        <div key={submenuItem.id} className="group relative">
+                        <div key={submenuItem.id} className="group relative p-2">
                           <Link
                             href={submenuItem.path || "#"}
                             className="block rounded text-sm text-dark hover:text-primary hover:text-[#07a496]"
@@ -184,7 +182,7 @@ const Header = () => {
         </nav>
 
         {/* Call Button on Large Screens */}
-        <div className="hidden lg:flex justify-end w-[150px] lg:w-[200px] lg:px-4 rounded-full">
+        {/* <div className="hidden lg:flex justify-end w-[150px] lg:w-[200px] lg:px-4 rounded-full">
           <Link
             href="tel:+91-9205138507"
             className={`block w-full text-center text-white bg-[#07a496] rounded-full ${
@@ -193,7 +191,7 @@ const Header = () => {
           >
             Call Now
           </Link>
-        </div>
+        </div> */}
       </header>
     </div>
   );
