@@ -59,7 +59,7 @@ const Header = () => {
           : "absolute bg-transparent"
       }`}
     >
-      <header className="flex justify-between items-center px-10 text-center">
+      <header className="flex justify-between items-center px-10">
         <div className="relative flex items-center">
           {/* Logo */}
           <div className="lg:w-[300px] w-[200px]">
