@@ -21,9 +21,9 @@ const Header = () => {
       if (scrollPosition >= 80) {
         setSticky(true);
         // Decrease navbar height on scroll
-        headerElement.style.height = "145px";
+        headerElement.style.height = "100px";
         // Remove top margin
-        headerElement.style.marginTop = "-35px";
+        headerElement.style.marginTop = "0px";
       } else {
         setSticky(false);
         // Reset navbar height and margin when not scrolling
@@ -53,7 +53,7 @@ const Header = () => {
 
   return (
     <div
-      className={`overflow-x-clip header left-0 top-0 w-full bg-gradient-to-r font-semibold from-white to-secondary ${
+      className={`overflow-x-clip header left-0 top-0 w-full bg-gradient-to-r font-semibold pt-5 from-white to-secondary ${
         sticky
           ? "fixed z-[9999] bg-white shadow-sticky backdrop-blur-sm transition"
           : "absolute bg-transparent"
