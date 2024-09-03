@@ -129,9 +129,9 @@ const Knowdoctor = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 p-8 rounded-lg shadow-lg">
           <div className="w-full lg:w-1/2">
             <h1 className="text-3xl font-bold">Dr. Bhupendra Pratap Bharti</h1>
-            <p className="text-xl mt-2">Associate director</p>
+            <p className="text-xl mt-2">Associate Director</p>
             <p className="text-xl">Orthopedic Spine Surgery</p>
-            <p className="text-xl">MAX Superspeciality hospital ,Patparganj New Delhi</p>
+            <p className="text-xl">MAX Super Speciality Hospital ,Patparganj New Delhi</p>
 
             <h2 className="mt-8 text-2xl font-semibold">
               Qualification
