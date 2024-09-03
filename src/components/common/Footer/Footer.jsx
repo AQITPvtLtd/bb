@@ -126,16 +126,17 @@ const Footer = () => {
             Contact Us
           </h2>
           <h3 className="font-bold">Dr. Bhupendra Pratap Bharti</h3>
-          <p className="mt-2">Consultant</p>
+          <p className="mt-2">Associate director</p>
           <p>
-            Institute for Bone, Joint Replacement, Orthopedics Spine & Sports
-            Medicine
+            {/* Institute for Bone, Joint Replacement, Orthopedics Spine & Sports
+            Medicine */}
+            Orthopaedic Spine surgery
           </p>
           <div className="mt-4">
             <h4 className="font-bold">OPD Schedule</h4>
-            <p>Room No.: OPD 1</p>
+            <p>OPD schedule-</p>
             <p className="flex items-center gap-2">
-              <FaClock className="text-xl" /> Mon/Wed/Fri: 2:00 pm to 4:00 pm
+              <FaClock className="text-xl" /> Mon/Tues/Thurs/Sat: 10 am-2 pm , Wed: 10am-12pm
             </p>
           </div>
           <div className="mt-4 space-y-3">

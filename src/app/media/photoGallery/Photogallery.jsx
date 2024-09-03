@@ -6,6 +6,7 @@ const photos = [
   { src: "/PhotoGallery/two.jpg", alt: "Gallery Image 2" },
   { src: "/PhotoGallery/three.jpeg", alt: "Gallery Image 3" },
   { src: "/PhotoGallery/four.jpeg", alt: "Gallery Image 4" },
+  { src: "/PhotoGallery/newspaper.jpeg", alt: "Gallery Image 5" },
   // Add more photos as needed
 ];
 
