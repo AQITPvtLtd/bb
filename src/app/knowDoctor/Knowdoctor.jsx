@@ -124,7 +124,7 @@ const Knowdoctor = () => {
   ];
 
   return (
-    <div className="mt-[200px]">
+    <div className="mt-[100px]">
       <div className="container mx-auto mt-16 px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 p-8 rounded-lg shadow-lg">
           <div className="w-full lg:w-1/2">

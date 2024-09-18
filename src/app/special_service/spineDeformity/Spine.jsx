@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 const Spine = () => {
   return (
-    <div className="container mx-auto px-4 py-16 mt-[200px]">
+    <div className="container mx-auto px-4 py-16 mt-[100px]">
       <div className="space-y-12 px-6">
         {/* Title Section */}
         <h1 className="text-center text-4xl font-semibold animate__animated animate__fadeInUp bg-[#07a496] p-10 text-white rounded-md shadow-lg">

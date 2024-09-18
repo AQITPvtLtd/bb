@@ -12,7 +12,7 @@ const photos = [
 
 const Photogallery = () => {
   return (
-    <div className="mt-[200px] px-4">
+    <div className="mt-[100px] px-4">
       <h2 className="text-center text-4xl font-bold mb-8">Photo Gallery</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {photos.map((photo, index) => (

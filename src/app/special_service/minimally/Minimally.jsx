@@ -4,7 +4,7 @@ import "animate.css";
 // import AppointmentForm from "@/app/components/homepage/AppoitmentForm";
 const Minimally = () => {
   return (
-    <div className="container mx-auto px-4 py-16 mt-[200px]">
+    <div className="container mx-auto px-4 py-16 mt-[100px]">
       <div className="space-y-8 px-6">
         <h1 className="text-center text-4xl font-semibold animate__animated animate__fadeInUp bg-[#07a496] p-10 text-white">
           Minimally Invasive Spine Surgery

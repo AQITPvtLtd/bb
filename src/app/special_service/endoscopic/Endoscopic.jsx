@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Endoscopic = () => {
   return (
-    <div className="container mx-auto px-4 py-16 mt-[200px]">
+    <div className="container mx-auto px-4 py-16 mt-[100px]">
       {/* Title Section */}
       <h1 className="text-center text-4xl font-semibold bg-[#07a496] p-8 text-white rounded-md shadow-lg mb-12">
         Endoscopic Spine Surgery
