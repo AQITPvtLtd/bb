@@ -12,7 +12,7 @@ const Testimonials = () => {
           alt="Contact Image"
         />
         <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
-        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+        <h1 className="text-white font-serif text-center text-4xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
         Testimonials
         </h1>
       </div>
