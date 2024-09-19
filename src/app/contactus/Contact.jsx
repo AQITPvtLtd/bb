@@ -11,7 +11,7 @@ import { IoTimerSharp } from "react-icons/io5";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
-
+import Image from "next/image";
 const Contact = () => {
   const router = useRouter();
   const [formData, setformData] = useState({
@@ -47,9 +47,22 @@ const Contact = () => {
 
   return (
     <div className="mt-[125px] overflow-hidden">
-      <h1 className="text-center font-semibold text-4xl">Get In Touch</h1>
+      {/* <h1 className="text-center font-semibold text-4xl">Get In Touch</h1> */}
+      <div className="relative">
+        <Image
+          src="/Contact/contact.avif"
+          width={1000}
+          height={1000}
+          className="w-full h-[250px] object-cover"
+          alt="Contact Image"
+        />
+        <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
+        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+          Get In Touch
+        </h1>
+      </div>
 
-      <div className="lg:grid grid-cols-12 mt-10 gap-10 md:p-5 overflow-hidden">
+      <div className="lg:grid grid-cols-12 gap-10 md:p-5 overflow-hidden">
         {/* <!-- First Card --> */}
         <div className="col-start-2 col-span-5 bg-white shadow-lg rounded-lg p-8 space-y-6 overflow-hidden">
           <h1 className="text-2xl font-semibold text-gray-800">
@@ -118,24 +131,30 @@ const Contact = () => {
           </div>
 
           <div className="flex items-start space-x-2 text-gray-700 mt-4">
-            <IoTimerSharp className="mt-1 text-xl" />
+            <div className="mt-1 lg:text-xl text-2xl">
+              <IoTimerSharp />
+            </div>
             <p className="text-base ">
               OPD Schedule: Mon/Thu: 6:00pm to 8:00pm <br />
               Tue/Wed/Fri/Sat: 8:00pm to 9:00pm
             </p>
           </div>
 
-          <div className="flex items-start space-x-2 text-gray-700 mt-4">
-            <IoIosCall className="mt-1 text-xl" />
+          <div className="flex items-center space-x-2 text-gray-700 mt-4">
+            <div className="mt-1 lg:text-xl text-2xl">
+              <IoIosCall className="" />
+            </div>
             <Link href="tel:+91-9891258507">
               <p className="text-base ">For Appointment: +91-98912 58507</p>
             </Link>
           </div>
 
-          <div className="flex items-start space-x-2 text-gray-700 mt-4">
-            <MdEmail className="mt-1 text-xl" />
+          <div className="flex items-center space-x-2 text-gray-700 mt-4">
+            <div className="mt-1 lg:text-xl text-2xl">
+              <MdEmail className="" />
+            </div>
             <Link href="mailto:drbhupendrabharti@gmail.com" target="__blank">
-              <p className="text-base ">Email: drbhupendrabharti@gmail.com</p>
+              <p className="text-lg ">Email: drbhupendrabharti@gmail.com</p>
             </Link>
           </div>
         </div>
@@ -146,32 +165,25 @@ const Contact = () => {
           <h1 className="text-3xl font-semibold text-gray-800 py-3">
             Location Map
           </h1>
-          {/* <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3501.5559450879423!2d77.179242!3d28.643068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029633b6af21%3A0x9a67323b63bcc188!2sBLK-Max%20Super%20Speciality%20Hospital%20Delhi!5e0!3m2!1sen!2sin!4v1723625605448!5m2!1sen!2sin"
-            width="350"
-            height="350"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="rounded-xl"
-          ></iframe> */}
 
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14007.576114090743!2d77.3090026!3d28.632938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb3558b5ac9d%3A0x8d590e3c6772a3c5!2sMax%20Super%20Speciality%20Hospital%2C%20Patparganj!5e0!3m2!1sen!2sin!4v1726658027067!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style={{ border: 0 }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div className="lg:col-span-3 col-span-12 lg:col-start-10 mt-8 lg:mt-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14007.576114090743!2d77.3090026!3d28.632938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb3558b5ac9d%3A0x8d590e3c6772a3c5!2sMax%20Super%20Speciality%20Hospital%2C%20Patparganj!5e0!3m2!1sen!2sin!4v1726658027067!5m2!1sen!2sin"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
 
         <div className="col-span-7 flex justify-center items-center py-10 overflow-hidden">
           <div>
-            <h1 className="text-2xl font-semibold text-gray-800 py-3">
-              Complete the fields below and we will follow up with you
+            <h1 className="text-2xl font-semibold text-gray-800 py-3 px-3 lg:px-0">
+              Complete the fields below and we will follow{" "}
+              <br className="lg:block hidden" /> up with you
             </h1>
 
             <form

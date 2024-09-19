@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
+import { FaYoutube } from "react-icons/fa6";
+
 import {
   FaClock,
   FaInstagram,
@@ -158,16 +160,18 @@ const Footer = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center gap-6 pt-7">
         {[
           { icon: <FaInstagram />, href: "https://www.instagram.com/drbhupendrabharti/?hl=en", target: "__blank" },
           { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=100066588493905", target: "__blank"},
           { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/dr-bhupendra-bharti/", target:"__blank" },
+          { icon: <FaYoutube />, href: "https://www.youtube.com/@shreshtha.spine_1", target:"__blank" },
         ].map((social, index) => (
           <Link
             key={index}
             href={social.href}
             className="p-3 bg-white rounded-full text-teal-600 hover:text-white hover:bg-teal-600 transition duration-300"
+            target="__blank"
           >
             {social.icon}
           </Link>

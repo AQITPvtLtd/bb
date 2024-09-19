@@ -22,9 +22,22 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="mt-[100px] px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold text-center mb-12">Blogs</h1>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="sm:mt-[75px] lg:mt-[100px] mt-[75px] px-4 sm:px-6 lg:px-8">
+      <div className="relative">
+        <Image
+          src="/Blog/background.png"
+          width={1000}
+          height={1000}
+          className="w-full h-[250px] object-cover"
+          alt="Contact Image"
+        />
+        <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
+        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+        Blogs
+        </h1>
+      </div>
+      {/* <h1 className="text-4xl font-bold text-center mb-12"></h1> */}
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {blogs.map((n) => (
           <li
             key={n.id}

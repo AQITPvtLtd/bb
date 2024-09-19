@@ -3,7 +3,7 @@ import React from "react";
 
 const Videogallery = () => {
   return (
-    <div className="bg-gray-100 flex flex-col items-center mt-[100px]">
+    <div className="bg-gray-100 flex flex-col items-center mt-[125px]">
       <h1 className="text-center text-4xl font-bold text-gray-800 mb-10 lg:pt-10">
         Video Gallery
       </h1>
