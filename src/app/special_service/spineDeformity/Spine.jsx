@@ -6,9 +6,19 @@ const Spine = () => {
     <div className="container mx-auto px-4 py-16 mt-[50px]">
       <div className="space-y-12 px-6">
         {/* Title Section */}
-        <h1 className="text-center text-4xl font-semibold animate__animated animate__fadeInUp bg-[#07a496] p-10 text-white rounded-md shadow-lg">
-          Spine Deformity Correction
-        </h1>
+        <div className="relative">
+          <Image
+            src="/Spine/spineImg.avif"
+            width={1000}
+            height={750}
+            className="w-full h-[250px] object-cover"
+            alt="Contact Image"
+          />
+          <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
+          <h1 className="text-white font-serif text-center text-4xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+            Spine Deformity Correction
+          </h1>
+        </div>
 
         <p className="text-lg text-gray-700 leading-relaxed">
           The primary goal of deformity surgery is to achieve a balanced spinal
@@ -82,7 +92,7 @@ const Spine = () => {
             </div>
             <Image
               src="/Spine/spinal-deformities.jpg"
-              height={350}
+              height={250}
               width={550}
             />
           </div>

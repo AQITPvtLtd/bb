@@ -23,7 +23,7 @@ const DetailedBlog = ({ id }) => {
   }, []);
 
   return (
-    <div className="mt-[200px] px-4 sm:px-6 lg:px-8">
+    <div className="mt-[100px] px-4 sm:px-6 lg:px-8">
       <h1 className="text-4xl font-bold text-center mb-12">{obj?.heading}</h1>
 
       <div className="flex justify-center mb-8">
@@ -32,7 +32,7 @@ const DetailedBlog = ({ id }) => {
           alt={obj?.heading}
           className="w-full h-auto object-cover rounded-lg shadow-lg"
           width={1000}
-          height={1000}
+          height={500}
         />
       </div>
 

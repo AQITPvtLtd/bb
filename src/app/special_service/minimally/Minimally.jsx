@@ -6,9 +6,22 @@ const Minimally = () => {
   return (
     <div className="container mx-auto px-4 py-8 mt-[80px]">
       <div className="space-y-8 px-6">
-        <h1 className="text-center text-4xl font-semibold animate__animated animate__fadeInUp bg-[#07a496] p-10 text-white">
+        <div className="relative">
+          <Image
+            src="/Minimally/minimalImg.png"
+            width={1000}
+            height={750}
+            className="w-full h-[250px] object-cover"
+            alt="Contact Image"
+          />
+          <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
+          <h1 className="text-white font-serif text-center text-4xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
           Minimally Invasive Spine Surgery
-        </h1>
+          </h1>
+        </div>
+        {/* <h1 className="text-center text-4xl font-semibold animate__animated animate__fadeInUp bg-[#07a496] p-10 text-white">
+          
+        </h1> */}
 
         <p className="text-lg leading-relaxed text-gray-700">
           Minimally Invasive Spine Surgery, also known as MISS, implies a
