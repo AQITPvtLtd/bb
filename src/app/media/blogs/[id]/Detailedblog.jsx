@@ -5,7 +5,6 @@ import { getBlog } from "@/services/getBlog";
 import Image from "next/image";
 import { SlCalender } from "react-icons/sl";
 
-
 const DetailedBlog = ({ id }) => {
   const [blogs, setBlogs] = useState([]);
   const obj = blogs.find((item) => item.id == id);
@@ -36,8 +35,11 @@ const DetailedBlog = ({ id }) => {
         />
       </div>
 
-      <p className="text-gray-500 text-sm mb-4 flex gap-2 items-center"> <SlCalender />
-      {obj?.date}</p>
+      <p className="text-gray-500 text-sm mb-4 flex gap-2 items-center">
+        {" "}
+        <SlCalender />
+        {obj?.date}
+      </p>
 
       <div className="prose prose-lg mx-auto">
         <p
