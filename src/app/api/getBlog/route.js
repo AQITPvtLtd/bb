@@ -3,17 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const results = await new Promise((resolve, reject) => {
-      // Perform the database query
-
-      pool.query("SELECT * FROM blog", (err, results, fields) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(results);
-        }
-      });
-    });
+    const [results] = await pool.query("SELECT * FROM blog");
 
     return NextResponse.json({
       message: "Success",
@@ -22,7 +12,6 @@ export async function GET() {
     });
   } catch (error) {
     console.log(error.message);
-    pool.end();
     return NextResponse.json({
       message: error.message,
       success: false,

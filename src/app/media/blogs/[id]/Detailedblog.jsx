@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import React from "react";
 import { getBlog } from "@/services/getBlog";
 import Image from "next/image";
 import { SlCalender } from "react-icons/sl";
@@ -8,26 +7,39 @@ import Sidebar from "../Sidebar";
 
 const DetailedBlog = ({ id }) => {
   const [blogs, setBlogs] = useState([]);
+  const [error, setError] = useState(null);
   const obj = blogs.find((item) => item.id == id);
 
   useEffect(() => {
     async function fetchBlogs() {
-      const result = await getBlog();
-      if (result.success) {
-        setBlogs(result.results);
-      } else {
-        console.log(result.message);
+      try {
+        const result = await getBlog();
+        if (result.success) {
+          setBlogs(result.results);
+        } else {
+          setError(result.message);
+        }
+      } catch (error) {
+        setError("Failed to fetch blogs");
       }
     }
     fetchBlogs();
-  }, []);
+  }, [id]);
+
+  if (!obj && !error) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p className="text-red-500 text-center mt-6">{error}</p>;
+  }
 
   return (
     <div className="mt-[100px] px-4 sm:px-6 lg:px-8">
       <div className="lg:grid grid-cols-12 gap-10 justify-between">
         <div className="col-start-1 col-span-9">
           <h1 className="text-4xl font-bold text-center mb-[60px]">
-            {obj?.heading}  
+            {obj?.heading}
           </h1>
 
           <div className="flex justify-center mb-8">
