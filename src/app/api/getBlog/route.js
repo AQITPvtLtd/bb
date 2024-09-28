@@ -1,4 +1,4 @@
-import connection from "@/helper/db";
+import pool from "@/helper/db";
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -6,7 +6,7 @@ export async function GET() {
     const results = await new Promise((resolve, reject) => {
       // Perform the database query
 
-      connection.query("SELECT * FROM blog", (err, results, fields) => {
+      pool.query("SELECT * FROM blog", (err, results, fields) => {
         if (err) {
           reject(err);
         } else {
@@ -22,7 +22,7 @@ export async function GET() {
     });
   } catch (error) {
     console.log(error.message);
-    connection.end();
+    pool.end();
     return NextResponse.json({
       message: error.message,
       success: false,

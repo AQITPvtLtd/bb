@@ -27,7 +27,7 @@ const DetailedBlog = ({ id }) => {
       <div className="lg:grid grid-cols-12 gap-10 justify-between">
         <div className="col-start-1 col-span-9">
           <h1 className="text-4xl font-bold text-center mb-[60px]">
-            {obj?.heading}
+            {obj?.heading}  
           </h1>
 
           <div className="flex justify-center mb-8">

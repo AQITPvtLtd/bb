@@ -56,8 +56,6 @@ export async function POST(request) {
              </html>`,
     });
 
-    // await transporter.sendMail(mailOptions);
-
     // Return success response
     return NextResponse.json({
       message: "Message Sent",
