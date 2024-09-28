@@ -29,6 +29,7 @@ const Contact = () => {
     e.preventDefault();
     const response = await form(formData);
 
+    console.log(response);
     if (response.success) {
       Swal.fire({
         title: "Form Submitted Successfully!",
@@ -42,6 +43,7 @@ const Contact = () => {
         title: "Oops...",
         text: "Something went wrong!",
       });
+      
     }
   };
 

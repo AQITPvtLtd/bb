@@ -1,6 +1,6 @@
 // import uuid from "uuid";
 import nodemailer from "nodemailer";
-import connection from "@/helper/db";
+import pool from "@/helper/db";
 import { NextResponse } from "next/server";
 import { v4 as uuid } from "uuid";
 
@@ -11,21 +11,12 @@ export async function POST(request) {
     {
       console.log({ name, Email, Phone, Query });
     }
-    // Insert data into the database
-    await new Promise((resolve, reject) => {
-      connection.query(
-        "INSERT INTO form(id, name ,Email ,Phone ,Query) VALUES (?, ?, ?, ?, ? )",
-        [unique_id, name, Email, Phone, Query],
-        (err, results, fields) => {
-          if (err) {
-            console.error(err);
-            reject(err);
-          } else {
-            resolve(results);
-          }
-        }
-      );
-    });
+    // Use pool.query with async/await for promises
+
+    const [results] = await pool.query(
+      "INSERT INTO form(id, name ,Email ,Phone ,Query) VALUES (?,?,?,?,?)",
+      [unique_id, name, Email, Phone, Query]
+    );
 
     // Send email using nodemailer
     const transporter = nodemailer.createTransport({
@@ -38,49 +29,42 @@ export async function POST(request) {
       },
     });
 
-    const mailOptions = {
+    // Send email to admin
+    await transporter.sendMail({
       from: process.env.MY_EMAIL,
       to: process.env.MY_EMAIL,
+      subject: "Dr. Bhupendra Pratap Bharti Form",
+      html: `<html>
+              <body>
+                <h3>You've got a new mail from ${name}, their email is: ✉️${Email} And phone Number is ${Phone} </h3>
+                <p>Message:</p>
+                <p>${Query}</p>
+              </body>
+             </html>`,
+    });
 
-      html: `<html lang="en">
-      <head>
-        <meta charset="utf-8">
+    // Send confirmation email to the user
+    await transporter.sendMail({
+      from: process.env.MY_EMAIL,
+      to: Email,
+      subject: "Thank You for contacting Dr. Bhupendra Pratap Bharti!",
+      html: `<html>
+              <body>
+                <h2>Hey ${name}!</h2>
+                <p>Your query is noted! Our team will contact you as soon as possible.</p>
+              </body>
+             </html>`,
+    });
 
-        <title>Utsao Enquiry Form</title>
-        <meta name="description" content="Utsao Enquiry Form">
-        <meta name="author" content="SitePoint">
-      <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
-
-        <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-      </head>
-
-      <body>
-        <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';"></div>
-              <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from ${name}, their email is: ✉️${Email} </h3>
-              <div style="font-size: 16px;">
-              <p>Query:</p>
-              <p>${Query}</p>
-              <br>
-              </div>
-              </div>
-      </body>
-      </html>`,
-    };
-
-    transporter.sendMail(mailOptions);
+    // await transporter.sendMail(mailOptions);
 
     // Return success response
-
     return NextResponse.json({
-      message: "Query Sent",
+      message: "Message Sent",
       success: true,
     });
   } catch (error) {
-    console.log("Error: " + error.message);
-
-    // Return error response
+    console.error(error);
     return NextResponse.json({
       message: "Failed to send query",
       success: false,
