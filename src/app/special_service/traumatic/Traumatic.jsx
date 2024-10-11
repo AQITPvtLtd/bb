@@ -8,7 +8,7 @@ const Traumatic = () => {
           src="/Services/trumatic.png"
           width={1000}
           height={750}
-          className="w-full h-[250px] object-cover"
+          className="w-full h-[250px] object-cover hidden lg:block"
           alt="Contact Image"
         />
         <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
@@ -17,132 +17,126 @@ const Traumatic = () => {
         </h1>
       </div>
 
-      <div className="space-y-3 p-6 bg-white rounded-lg shadow-md">
-        <p className="text-lg leading-relaxed text-gray-700">
+      <div className="space-y-2 p-8 bg-white rounded-lg">
+        <p className="text-lg">
           <strong>Spine fracture:</strong> Spine fracture is a serious issue and
           is defined as a break in the vertebrae, which can affect life like any
           other fracture.
         </p>
 
-        <p className="text-lg text-gray-700">
+        <p className="text-lg">
           <strong> Symptoms: </strong>Patient with spine fracture usually
-          presented with
+          presented with:
         </p>
-        <ul className="list-decimal pl-7 space-y-1 text-gray-700">
+        <ul className="list-decimal pl-8 space-y-1">
           <li>Back pain – the most common complaint</li>
           <li>Difficulty to sit/stand/walk</li>
           <li>
-            Sciatica like pain in limbs- radicular pain, tingling, numbness
+            Sciatica-like pain in limbs – radicular pain, tingling, numbness
           </li>
           <li>Weakness in limbs</li>
-          <li>Bladder/Bowel involvement usually- incontinence</li>
+          <li>Bladder/Bowel involvement – incontinence</li>
           <li>
-            Spinal deformity and Change in posture – usually in case of
-            untreated fracture
+            Spinal deformity and posture changes – usually in untreated cases
           </li>
         </ul>
 
-        <p className="text-lg font-semibold text-gray-800">
+        <p className="text-xl font-semibold">
           Spine Fracture Causes:
         </p>
-        <ul className="list-decimal pl-7 space-y-2 text-gray-700">
+        <ul className="list-decimal pl-8 space-y-1">
           <li>
-            In young patient – usually high impact injury i.e.- road traffic
-            accident, Fall from height/sports injury
+            In young patients – usually due to high-impact injury like a road
+            traffic accident, fall from height, or sports injury.
           </li>
           <li>
-            In Old patients- Osteoporosis is leading cause. Because of low bone
-            density over the time bone become vulnerable for fracture. Many time
-            even leaning forward /sneezing trivial trauma may cause spine
-            fracture.
+            In older patients – Osteoporosis is the leading cause. Because of
+            low bone density, even trivial trauma, like leaning forward or
+            sneezing, can cause a spine fracture.
           </li>
           <li>
-            Fracture associate with:
-            <ul className="list-disc pl-7 space-y-2">
-              <li>Tumors – which usually metastatic</li>
+            Fractures associated with:
+            <ul className="list-disc pl-8 space-y-1">
+              <li>Tumors – usually metastatic</li>
               <li>Drug-induced – e.g., long-standing steroid consumption</li>
             </ul>
           </li>
         </ul>
 
-        <p className="text-lg text-gray-700">
-          <strong> Diagnosis:</strong>on basis of clinical examination and
-          investigations
+        <p className="text-lg">
+          <strong> Diagnosis:</strong> Based on clinical examination and
+          investigations:
         </p>
-        <ul className="list-decimal pl-7 space-y-2 text-gray-700">
+        <ul className="list-decimal pl-8 space-y-1">
           <li>MRI – the investigation of choice</li>
           <li>X-rays and CT scan</li>
           <li>
             Bone density tests:
-            <ul className="list-disc pl-7 space-y-2">
-              <li> also called as BMD or DEXA scan </li>
-              <li> to quantity osteoporosis</li>
-              <li>Kind of fixation during fracture fixation surgery</li>
-              <li>Kind of medical management for osteoporosis</li>
+            <ul className="list-disc pl-8 space-y-2">
+              <li>Also called BMD or DEXA scan</li>
+              <li>Used to quantify osteoporosis</li>
+              <li>To determine type of fixation during surgery</li>
+              <li>For medical management of osteoporosis</li>
             </ul>
           </li>
         </ul>
 
-        <p className="text-lg text-gray-700">
-          <strong>Management:</strong> depends upon:
+        <p className="text-lg">
+          <strong>Management:</strong> Depends on:
         </p>
 
-        <ul className="list-decimal pl-7 space-y-2 text-gray-700">
+        <ul className="list-decimal pl-8 space-y-1">
           <li>Cause of fracture</li>
           <li>Type of fracture </li>
           <li>Site of fracture</li>
         </ul>
 
-        <p className="text-lg leading-relaxed text-gray-700">
-          Most of the time, spine fractures do not need surgery and can be
-          managed conservatively (non-surgical).
+        <p className="text-lg leading-relaxed">
+          Most spine fractures do not need surgery and can be managed
+          conservatively.
         </p>
-        <ul className="list-decimal pl-7 space-y-2 text-gray-700">
-          <li>Pain management with medicine</li>
+        <ul className="list-decimal pl-8 space-y-1">
+          <li>Pain management with medication</li>
           <li>
-            Bracing of spine – it support back, improve overall strength and
-            prevention of collapse of fracture
+            Bracing – supports the back, improves strength, and prevents
+            collapse.
           </li>
           <li>
-            Physical therapy- limbs and chest therapy to maintained joint
-            suppleness and chest related issues when patient is in bed
+            Physical therapy – helps maintain joint mobility and prevent chest
+            issues while bedridden.
           </li>
-          <li>Treatment of associate factors- e.g.- osteoporosis</li>
+          <li>Treatment of associated factors, e.g., osteoporosis</li>
         </ul>
 
-        <p className="text-lg text-gray-800">
-          {" "}
-          <strong>Surgery:</strong> Usually depend upon
+        <p className="text-xl font-semibold">
+          Surgery: Usually required when:
         </p>
-        <ul className="list-decimal pl-7 space-y-2 text-gray-700">
-          <li>Failed conservative treatment</li>
+        <ul className="list-decimal pl-8 space-y-1">
+          <li>Conservative treatment fails</li>
+          <li>Pain and disability increase despite non-surgical treatments</li>
           <li>
-            Pain and disability increase despite of conservative treatment{" "}
+            Nerve compression – causing weakness, bladder, or bowel incontinence
           </li>
-          <li>
-            Nerve compression at the time of presentation – weakness in limbs,
-            bladder and bowel incontinence
-          </li>
-          <li>Deformity of spine</li>
+          <li>Spine deformity</li>
         </ul>
 
-        <p className="text-lg font-semibold text-gray-800">Types of Surgery:</p>
-        <ul className="list-decimal pl-7 space-y-2 text-gray-700">
+        <p className="text-lg font-semibold">
+          Types of Surgery:
+        </p>
+        <ul className="list-decimal pl-8 space-y-1">
           <li>
-            In young patient – mainly spinal fixation +/- decompression of
-            neural elements
+            In young patients – spinal fixation with or without neural
+            decompression
           </li>
           <li>
-            In old age- cementing of affected vertebrae- Balloon kyphoplasty
-            /vertebroplasty – This is minimally invasive procedure. In this
-            procedure special kind of cement to fill the void created after
-            fracture. this procedure is with MAXIMUM BENEFIT WITH MINIMAL
-            INTERVENTION.
+            In older patients – Balloon kyphoplasty or vertebroplasty, a
+            minimally invasive procedure using special cement to fill the void
+            created after a fracture. Maximum benefit with minimal intervention.
           </li>
         </ul>
 
-        <p className="text-lg leading-relaxed text-gray-700">
-          In some case need fixation need along with cementing.
+        <p className="text-lg font-semibold">
+          In some cases, fixation along with cementing is needed.
         </p>
       </div>
     </div>
