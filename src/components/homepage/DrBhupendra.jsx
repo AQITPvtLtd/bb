@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const DrBhupendra = () => {
   return (
@@ -21,7 +22,6 @@ const DrBhupendra = () => {
           <h3 className="text-lg sm:text-xl font-semibold text-primary mb-2">
             Consultant Orthopedic Spine Surgery
           </h3>
-
           <div className="mb-6">
             <h4 className="text-lg font-semibold text-gray-700">
               Qualification
@@ -33,7 +33,6 @@ const DrBhupendra = () => {
               Fellowship Busan - South Korea
             </p>
           </div>
-
           <div className="mb-6">
             <h4 className="text-lg font-semibold text-gray-700">Experience</h4>
             <p className="text-gray-600 mt-2 leading-relaxed">
@@ -44,7 +43,6 @@ const DrBhupendra = () => {
               Medicine at BLK Super Speciality Hospital, New Delhi.
             </p>
           </div>
-
           <div>
             <h4 className="text-lg font-semibold text-gray-700">
               Specializes in:
@@ -55,10 +53,14 @@ const DrBhupendra = () => {
               techniques (UBE endoscopy/ Microscpic).
             </p>
           </div>
-
-          <button className="px-6 py-2 bg-[#07a496] text-white mt-5 font-semibold rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1">
-            Read More
-          </button>
+          <div className="mt-5">
+            <Link
+              href="/knowDoctor"
+              className="px-4 py-3 bg-[#07a496] text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              Read More
+            </Link>
+          </div>
         </div>
       </div>
     </div>
