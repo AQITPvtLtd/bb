@@ -13,7 +13,7 @@ const photos = [
 
 const Printmedia = () => {
   return (
-    <div className="mt-[125px] px-4">
+    <div className="px-4">
       <div className="relative">
         <Image
           src="/PrintMedia/printmedia.jpg"

@@ -26,7 +26,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="sm:mt-[75px] lg:mt-[100px] mt-[75px] px-4 sm:px-6 lg:px-8">
+    <div className="px-4 sm:px-6 lg:px-8">
       <div className="relative">
         <Image
           src="/Blog/background.png"

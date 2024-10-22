@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import "animate.css";
 // import AppointmentForm from "@/app/components/homepage/AppoitmentForm";
 const SpineTrauma = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="">
       <h1 className="text-center text-4xl font-semibold animate__animated animate__fadeInUp bg-[#07a496] p-10 text-white">
         Spine Trauma
       </h1>
@@ -13,7 +13,7 @@ const SpineTrauma = () => {
       </h1>
       {/* <AppointmentForm /> */}
     </div>
-  )
-}
+  );
+};
 
-export default SpineTrauma
+export default SpineTrauma;

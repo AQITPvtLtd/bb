@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import "animate.css";
 // import AppointmentForm from "@/app/components/homepage/AppoitmentForm";
 
 const Craniovertebral = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="">
       <h1 className="text-center text-4xl font-semibold animate__animated animate__fadeInUp bg-[#07a496] p-10 text-white">
-      Craniovertebral Junction Stabilization Surgery
+        Craniovertebral Junction Stabilization Surgery
       </h1>
 
       <h1 className="text-center text-4xl py-7 font-semibold animate__animated animate__backInDown">
@@ -14,7 +14,7 @@ const Craniovertebral = () => {
       </h1>
       {/* <AppointmentForm /> */}
     </div>
-  )
-}
+  );
+};
 
-export default Craniovertebral
+export default Craniovertebral;

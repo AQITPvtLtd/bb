@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Spine = () => {
   return (
-    <div className="mx-auto py-16 mt-[50px]">
+    <div className="mx-auto">
       <div className="space-y-12">
         {/* Title Section */}
         <div className="relative">
@@ -197,7 +197,7 @@ const Spine = () => {
               <h2 className="text-[#273c76] font-semibold text-xl">
                 When is spinal surgery necessary?
               </h2>
-              
+
               <ul className="list-disc list-inside text-lg text-gray-700 space-y-1">
                 <li>When curve is symptomatically compressing your organs</li>
                 <li>if the curve continues to progress</li>

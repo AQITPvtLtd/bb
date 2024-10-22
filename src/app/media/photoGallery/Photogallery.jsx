@@ -12,9 +12,8 @@ const photos = [
 
 const Photogallery = () => {
   return (
-    <div className="mt-[125px] px-4">
+    <div className="px-4">
       {/* <h2 className="text-center text-4xl font-bold mb-8">Photo Gallery</h2> */}
-
 
       <div className="relative">
         <Image
@@ -26,7 +25,7 @@ const Photogallery = () => {
         />
         <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
         <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
-        Photo Gallery
+          Photo Gallery
         </h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">

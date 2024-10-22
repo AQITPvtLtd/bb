@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-[125px] overflow-hidden">
+    <div className="overflow-hidden">
       {/* <h1 className="text-center font-semibold text-4xl">Get In Touch</h1> */}
       <div className="relative">
         <Image

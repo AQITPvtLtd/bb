@@ -35,7 +35,7 @@ const DetailedBlog = ({ id }) => {
   }
 
   return (
-    <div className="mt-[100px] px-4 sm:px-6 lg:px-8">
+    <div className="px-4 sm:px-6 lg:px-8">
       <div className="lg:grid grid-cols-12 gap-10 justify-between">
         <div className="col-start-1 col-span-9">
           <h1 className="text-4xl font-bold text-center mb-[60px]">

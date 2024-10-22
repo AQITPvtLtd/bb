@@ -4,7 +4,7 @@ import "animate.css";
 
 const RF = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="">
       <h1 className="text-center text-4xl font-semibold animate__animated animate__fadeInUp bg-[#07a496] p-10 text-white">
         RF Ablation of Disc
       </h1>

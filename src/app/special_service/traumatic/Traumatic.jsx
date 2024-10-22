@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Traumatic = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="">
       <div className="relative">
         <Image
           src="/Services/trumatic.png"
@@ -41,9 +41,7 @@ const Traumatic = () => {
           </li>
         </ul>
 
-        <p className="text-xl font-semibold">
-          Spine Fracture Causes:
-        </p>
+        <p className="text-xl font-semibold">Spine Fracture Causes:</p>
         <ul className="list-decimal pl-8 space-y-1">
           <li>
             In young patients – usually due to high-impact injury like a road
@@ -108,9 +106,7 @@ const Traumatic = () => {
           <li>Treatment of associated factors, e.g., osteoporosis</li>
         </ul>
 
-        <p className="text-xl font-semibold">
-          Surgery: Usually required when:
-        </p>
+        <p className="text-xl font-semibold">Surgery: Usually required when:</p>
         <ul className="list-decimal pl-8 space-y-1">
           <li>Conservative treatment fails</li>
           <li>Pain and disability increase despite non-surgical treatments</li>
@@ -120,9 +116,7 @@ const Traumatic = () => {
           <li>Spine deformity</li>
         </ul>
 
-        <p className="text-lg font-semibold">
-          Types of Surgery:
-        </p>
+        <p className="text-lg font-semibold">Types of Surgery:</p>
         <ul className="list-decimal pl-8 space-y-1">
           <li>
             In young patients – spinal fixation with or without neural

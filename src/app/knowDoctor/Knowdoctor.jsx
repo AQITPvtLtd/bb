@@ -11,7 +11,7 @@ const Knowdoctor = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <div className="mt-[125px]">
+    <div className="">
       <div className="relative">
         <Image
           src="/knowdoctor/about.jpg"
@@ -39,7 +39,10 @@ const Knowdoctor = () => {
               MAX Super Speciality Hospital, Patparganj, New Delhi.
             </p>
 
-            <p className="text-xl font-semibold">H 38, near Diamond Crown Banquet Hall, Sector 51, Noida, Uttar Pradesh 201307</p>
+            <p className="text-xl font-semibold">
+              H 38, near Diamond Crown Banquet Hall, Sector 51, Noida, Uttar
+              Pradesh 201307
+            </p>
 
             <h2 className="mt-8 text-2xl font-semibold underline underline-offset-4 decoration-[#07a496]">
               Qualification
@@ -48,10 +51,18 @@ const Knowdoctor = () => {
             <ul className="list-disc pl-6 text-lg mt-4 space-y-2">
               <li className="font-semibold">MBBS</li>
               <li className="font-semibold">MS (Orthopaedic)</li>
-              <li className="font-semibold">Spine Fellowship - Indian Spinal Injuries Centre, India</li>
-              <li className="font-semibold">Fellowship Anterior Spine Surgery - Hongkong</li>
-              <li className="font-semibold">AO Spine Inland Fellowship - Park Clinic, India</li>
-              <li className="font-semibold">Endoscopy UBE Fellowship - Busan, South Korea</li>
+              <li className="font-semibold">
+                Spine Fellowship - Indian Spinal Injuries Centre, India
+              </li>
+              <li className="font-semibold">
+                Fellowship Anterior Spine Surgery - Hongkong
+              </li>
+              <li className="font-semibold">
+                AO Spine Inland Fellowship - Park Clinic, India
+              </li>
+              <li className="font-semibold">
+                Endoscopy UBE Fellowship - Busan, South Korea
+              </li>
             </ul>
           </div>
 
@@ -69,10 +80,8 @@ const Knowdoctor = () => {
         </div>
       </div>
 
-     
       <h1 className="lg:text-5xl font-semibold md:text-5xl sm:text-3xl text-3xl px-20 lg:py-10 py-5">
         Frequently <br /> asked questions
-
       </h1>
       <div id="accordion-collapse" className="lg:px-20 px-14 gap-20">
         {/* First Accordion Item */}

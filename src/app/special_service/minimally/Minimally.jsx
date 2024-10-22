@@ -4,7 +4,7 @@ import "animate.css";
 // import AppointmentForm from "@/app/components/homepage/AppoitmentForm";
 const Minimally = () => {
   return (
-    <div className="py-8 mt-[80px]">
+    <div className="">
       <div className="space-y-8">
         <div className="relative">
           <Image
@@ -19,7 +19,6 @@ const Minimally = () => {
             Minimally Invasive Spine Surgery
           </h1>
         </div>
-       
 
         <div className="px-7">
           <p className="text-lg leading-relaxed text-gray-700">
@@ -62,7 +61,12 @@ const Minimally = () => {
               <li>Endoscopic Discectomy and interbody fusion surgery</li>
             </ul>
 
-            <Image src="/Minimally/MISS6.jpg" height={350} width={350} className="mt-16" />
+            <Image
+              src="/Minimally/MISS6.jpg"
+              height={350}
+              width={350}
+              className="mt-16"
+            />
           </div>
           <p className="text-lg text-gray-700">
             Exclusion – high grade deformity and complex tumor.
