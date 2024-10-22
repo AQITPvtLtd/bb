@@ -42,7 +42,7 @@ function Banner() {
   ];
 
   return (
-    <div className="overflow-x-hidden relative mt-[80px] md:mt-[100px] bg-gradient-to-r from-[#07a496] to-[#04686e]">
+    <div className="overflow-x-hidden relative bg-gradient-to-r from-[#07a496] to-[#04686e]">
       <Slider {...settings} className="px-4 py-6 md:p-10">
         {data.map((d, index) => (
           <div key={d.name} className="relative w-full">
