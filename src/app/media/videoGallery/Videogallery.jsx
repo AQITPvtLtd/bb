@@ -24,6 +24,18 @@ const Videogallery = () => {
           <iframe
             width="560"
             height="315"
+            src="https://www.youtube.com/embed/yo9SbaGEWzM?si=4Et6_9-lUvmU2hH3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="flex justify-center">
+          <iframe
+            width="560"
+            height="315"
             src="https://www.youtube.com/embed/w4j6SdpJZdw?si=jsswGKi5E5s_Ym9T"
             title="YouTube video player"
             frameborder="0"
