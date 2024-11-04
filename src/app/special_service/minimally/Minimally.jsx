@@ -5,184 +5,184 @@ import "animate.css";
 const Minimally = () => {
   return (
     <div className="">
-      <div className="space-y-8">
+      <div className="">
         <div className="relative">
           <Image
-            src="/Minimally/minimalImg.png"
-            width={1200}
-            height={750}
+            src="/special_services/geriatric.jpg"
+            width={10000}
+            height={10000}
             className="w-full h-[250px] object-cover"
-            alt="Contact Image"
+            alt="Service Image"
           />
-          <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
-          <h1 className="text-white font-serif text-center text-4xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+          {/* <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div> */}
+          <div className="w-1/2 text-white justify-center lg:text-5xl text-4xl ml-5 font-bold my-4 absolute inset-0 z-20 flex items-center">
             Minimally Invasive Spine Surgery
-          </h1>
-        </div>
-
-        <div className="px-7">
-          <p className="text-lg leading-relaxed text-gray-700">
-            Minimally Invasive Spine Surgery, also known as MISS, implies a
-            minimal surgical invasion.
-          </p>
-          <p className="text-lg leading-relaxed text-gray-700">
-            MISS techniques target surgery and utilize more modern technology,
-            advanced imaging techniques, and special medical equipment to reduce
-            tissue trauma, bleeding, radiation exposure, infection risk, and
-            decreased hospital stays by minimizing the size of the incision and
-            early rehabilitation.
-          </p>
-          <p className="text-lg leading-relaxed text-gray-700">
-            It also makes possible surgery previously considered too high risk
-            for traditional surgery due to medical history or complexity of the
-            condition.
-          </p>
-
-          <p className="font-semibold text-2xl text-[#273c76] py-2">
-            Procedures done with a microscope require skin openings of
-            approximately one inch or more:
-          </p>
-          <div className="lg:flex lg:gap-72">
-            <ul className="list-disc list-inside space-y-2 text-lg text-gray-700">
-              <li>Discectomy, Laminectomy, and spinal canal decompression</li>
-              <li>
-                Interbody fusion surgery for degenerative and slipped disc
-              </li>
-              <li>Fracture fixation/stabilization</li>
-              <li>Infection in spine</li>
-              <li>Anterior cervical discectomy and fusion</li>
-              <li>
-                Artificial disc replacement or total disc replacement (cervical
-                /Lumbar)
-              </li>
-              <li>Oblique and Anterior lumbar interbody fusion</li>
-              <li>Percutaneous vertebroplasty, a.k.a. Kyphoplasty</li>
-              <li>Decompression and fixation of spine tumor</li>
-              <li>Endoscopic Discectomy and interbody fusion surgery</li>
-            </ul>
-
-            <Image
-              src="/Minimally/MISS6.jpg"
-              height={350}
-              width={350}
-              className="mt-16"
-            />
-          </div>
-          <p className="text-lg text-gray-700">
-            Exclusion – high grade deformity and complex tumor.
-          </p>
-
-          <p className="font-semibold text-2xl text-[#273c76] py-3">
-            FAQ about Minimally Invasive Spine Surgery (MISS)
-          </p>
-
-          <div className="space-y-6">
-            <div>
-              <p className="font-semibold text-xl text-gray-800">
-                Q. Is Minimally Invasive Spine Surgery Safe?
-              </p>
-              <p className="text-lg text-gray-700">
-                <span className="font-semibold">Ans:</span> In the era of modern
-                spinal surgery where technique and technology have advanced to
-                the accuracy of &lt; 1 mm precision, spine surgery has become
-                very safe. Neuromicroscopes, Multimodal neuromonitoring,
-                navigation, ultrasonic bone cutter, special drill burr, and
-                robotics make it safe.
-              </p>
-            </div>
-
-            <div>
-              <p className="font-semibold text-xl text-gray-800">
-                Q. How long will I be in the hospital?
-              </p>
-              <p className="text-lg text-gray-700">
-                <span className="font-semibold">Ans:</span> It depends on the
-                surgery. After discectomy/decompression, the patient can go home
-                the same day. For various stabilization and fusion surgeries,
-                the hospital stay will be 2-3 days compared to 5-6 days after
-                traditional open surgery.
-              </p>
-            </div>
-
-            <div>
-              <p className="font-semibold text-xl text-gray-800">
-                Q. What is the recovery time, and when can I return to work?
-              </p>
-              <p className="text-lg text-gray-700">
-                <span className="font-semibold">Ans:</span> This is
-                individualized to the specific needs of the patient, type of
-                surgery, patient occupation, and need for work.
-              </p>
-            </div>
-
-            <div>
-              <p className="font-semibold text-xl text-gray-800">
-                Q. Does Minimally Invasive Spine Surgery need physical therapy?
-              </p>
-              <p className="text-lg text-gray-700">
-                <span className="font-semibold">Ans:</span> Minimally Invasive
-                Spine Surgery will need physical therapy, but rehabilitation
-                will be early, so recovery time will be reduced and one can
-                resume work earlier.
-              </p>
-            </div>
-          </div>
-
-          <h1 className="text-[#273c76] font-bold text-3xl mt-10">
-            Minimally Invasive Spinal Fusion Case Study
-          </h1>
-
-          <div className="space-y-4">
-            <p className="text-lg text-gray-700">
-              <span className="font-semibold">History:</span> 42-year-old lady
-              presented with low back pain with radicular pain in both lower
-              limbs, which used to increase after standing and walking.
-            </p>
-            <p className="text-lg text-gray-700">
-              <span className="font-semibold">Investigations:</span> MRI L.S.
-              spine and dynamic x-rays L.S. spine were done - Anterolisthesis
-              L4-5 grade II Lytic type.
-            </p>
-            <p className="text-lg text-gray-700">
-              <span className="font-semibold">Procedure Done:</span> MIS TLIF
-              (Transforaminal lumbar interbody fusion) was done.
-            </p>
-          </div>
-
-          <h1 className="text-[#273c76] font-bold text-3xl mt-10">Preop</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Image
-              src="/Minimally/MISS2.jpg"
-              height={350}
-              width={350}
-              alt="Preop Image 1"
-            />
-            <Image
-              src="/Minimally/MISS3.jpg"
-              height={350}
-              width={350}
-              alt="Preop Image 2"
-            />
-          </div>
-
-          <h1 className="text-[#273c76] font-bold text-3xl mt-10">Postop</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Image
-              src="/Minimally/MIS4.jpg"
-              height={350}
-              width={350}
-              alt="Postop Image 1"
-            />
-            <Image
-              src="/Minimally/MISS5.jpg"
-              height={350}
-              width={350}
-              alt="Postop Image 2"
-            />
           </div>
         </div>
       </div>
-      {/* <AppointmentForm /> */}
+      <div className="bg-gray-100 text-gray-800 lg:p-8 p-3">
+        <div className="max-w-5xl mx-auto bg-white lg:p-6 p-4 rounded-lg shadow-lg">
+          <div className="lg:px-7 space-y-6">
+            {/* Introduction Section */}
+            <p className="text-lg leading-relaxed text-gray-700">
+              Minimally Invasive Spine Surgery (MISS) refers to surgical
+              techniques that reduce tissue trauma, bleeding, infection risk,
+              and radiation exposure. By using advanced imaging and medical
+              equipment, these techniques allow for smaller incisions and faster
+              recovery.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700">
+              MISS enables procedures previously considered high-risk for
+              traditional surgery, especially in cases involving complex
+              conditions or significant medical history.
+            </p>
+
+            {/* Procedures Section */}
+            <h2 className="font-semibold text-2xl text-[#273c76] py-2">
+              Procedures Requiring Minimal Incisions (Approximately 1 Inch or
+              More)
+            </h2>
+            <div className="lg:flex lg:gap-10">
+              <ul className="list-disc list-inside space-y-2 text-lg text-gray-700">
+                <li>Discectomy, Laminectomy, and Spinal Canal Decompression</li>
+                <li>
+                  Interbody Fusion Surgery for Degenerative or Slipped Discs
+                </li>
+                <li>Fracture Fixation/Stabilization</li>
+                <li>Spinal Infection Treatment</li>
+                <li>Anterior Cervical Discectomy and Fusion</li>
+                <li>Artificial Disc Replacement (Cervical/Lumbar)</li>
+                <li>Oblique and Anterior Lumbar Interbody Fusion</li>
+                <li>Percutaneous Vertebroplasty (Kyphoplasty)</li>
+                <li>Spinal Tumor Decompression and Fixation</li>
+                <li>Endoscopic Discectomy and Interbody Fusion Surgery</li>
+              </ul>
+              <Image
+                src="/Minimally/MISS6.jpg"
+                height={350}
+                width={350}
+                className="mt-4 lg:mt-0"
+                alt="Minimally Invasive Spine Surgery Illustration"
+              />
+            </div>
+            <p className="text-lg text-gray-700">
+              <span className="font-semibold">Note:</span> MISS is not
+              recommended for high-grade deformities or complex tumors.
+            </p>
+
+            {/* FAQ Section */}
+            <h2 className="font-semibold text-2xl text-[#273c76] py-3">
+              FAQs About Minimally Invasive Spine Surgery (MISS)
+            </h2>
+            <div className="space-y-6">
+              <div>
+                <p className="font-semibold text-xl text-gray-800">
+                  Q. Is Minimally Invasive Spine Surgery Safe?
+                </p>
+                <p className="text-lg text-gray-700">
+                  <span className="font-semibold">Ans:</span> MISS is highly
+                  safe due to advancements in precision technology, such as
+                  neuromicroscopes, neuromonitoring, navigation, and robotics,
+                  providing accuracy within 1 mm.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-xl text-gray-800">
+                  Q. How long will I stay in the hospital?
+                </p>
+                <p className="text-lg text-gray-700">
+                  <span className="font-semibold">Ans:</span> Recovery time
+                  varies. Patients undergoing discectomy or decompression can
+                  often return home the same day. Fusion surgeries typically
+                  require a 2-3 day stay.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-xl text-gray-800">
+                  Q. What is the recovery time, and when can I return to work?
+                </p>
+                <p className="text-lg text-gray-700">
+                  <span className="font-semibold">Ans:</span> Recovery time
+                  depends on the procedure and the patient's occupation and
+                  individual needs.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-xl text-gray-800">
+                  Q. Is physical therapy required after MISS?
+                </p>
+                <p className="text-lg text-gray-700">
+                  <span className="font-semibold">Ans:</span> Yes, early
+                  physical therapy aids recovery and enables a faster return to
+                  regular activities.
+                </p>
+              </div>
+            </div>
+
+            {/* Case Study Section */}
+            <h2 className="font-bold text-3xl text-[#273c76] mt-10">
+              Minimally Invasive Spinal Fusion Case Study
+            </h2>
+            <div className="space-y-4 text-lg text-gray-700">
+              <p>
+                <span className="font-semibold">Patient History:</span> A
+                42-year-old woman presented with chronic low back pain and
+                radicular pain in both lower limbs, aggravated by standing and
+                walking.
+              </p>
+              <p>
+                <span className="font-semibold">Investigations:</span> MRI and
+                dynamic X-rays of the lumbar spine revealed Grade II Lytic
+                Anterolisthesis at L4-5.
+              </p>
+              <p>
+                <span className="font-semibold">Procedure:</span> The patient
+                underwent Transforaminal Lumbar Interbody Fusion (MIS TLIF).
+              </p>
+            </div>
+
+            {/* Image Sections */}
+            <h2 className="font-bold text-3xl text-[#273c76] mt-10">
+              Preoperative Images
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Image
+                src="/Minimally/MISS2.jpg"
+                height={350}
+                width={350}
+                alt="Preoperative Image 1"
+              />
+              <Image
+                src="/Minimally/MISS3.jpg"
+                height={350}
+                width={350}
+                alt="Preoperative Image 2"
+              />
+            </div>
+
+            <h2 className="font-bold text-3xl text-[#273c76] mt-10">
+              Postoperative Images
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Image
+                src="/Minimally/MIS4.jpg"
+                height={350}
+                width={350}
+                alt="Postoperative Image 1"
+              />
+              <Image
+                src="/Minimally/MISS5.jpg"
+                height={350}
+                width={350}
+                alt="Postoperative Image 2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

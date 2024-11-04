@@ -2,250 +2,212 @@ import React from "react";
 import Image from "next/image";
 const Spine = () => {
   return (
-    <div className="mx-auto">
-      <div className="space-y-12">
-        {/* Title Section */}
+    <div>
+      <div className="space-y-8">
         <div className="relative">
           <Image
-            src="/Spine/spineImg.avif"
-            width={1000}
-            height={750}
+            src="/special_services/geriatric.jpg"
+            width={10000}
+            height={10000}
             className="w-full h-[250px] object-cover"
-            alt="Contact Image"
+            alt="Service Image"
           />
-          <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
-          <h1 className="text-white font-serif text-center text-4xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+          {/* <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div> */}
+          <div className="w-1/2 text-white justify-center lg:text-5xl text-4xl ml-5 font-bold my-4 absolute inset-0 z-20 flex items-center">
             Spine Deformity Correction
-          </h1>
+          </div>
         </div>
+      </div>
+      <div className="bg-gray-100 text-gray-800 lg:p-8 p-3">
+        <div className="max-w-5xl mx-auto bg-white lg:p-6 p-4 rounded-lg shadow-lg">
+          <div className="lg:px-7">
+            <p className="text-lg text-gray-700 leading-relaxed mb-3">
+              The primary goal of deformity surgery is to achieve balanced
+              spinal alignment through stable fusion, preventing further
+              deformity and relieving neurological symptoms.
+            </p>
 
-        <div className="px-10">
-          <p className="text-lg text-gray-700 leading-relaxed mb-3">
-            The primary goal of deformity surgery is to achieve a balanced
-            spinal alignment through rigid fusion, prevent further deformity and
-            alleviate neurological symptoms.
-          </p>
-          {/* Content Section */}
-          <div className="space-y-4">
-            {/* Spinal Deformities */}
-            <div className="bg-white rounded-md">
-              <p className="font-semibold text-xl text-gray-800 mb-2">
-                Q. What are spinal deformities?
-              </p>
-              <p className="text-lg text-gray-700">
-                <span className="font-semibold">Ans:</span> All spinal
-                deformities involve deviation of the curve or rotation of the
-                spine.
-              </p>
-            </div>
+            <div className="space-y-4">
+              {/* Spinal Deformities */}
+              <div className="bg-white rounded-md p-4">
+                <p className="font-semibold text-xl text-gray-800 mb-2">
+                  Q. What are spinal deformities?
+                </p>
+                <p className="text-lg text-gray-700">
+                  <span className="font-semibold">Ans:</span> Spinal deformities
+                  are deviations or rotations in the spine’s natural curve.
+                </p>
+              </div>
 
-            <div className="lg:flex">
-              <div>
-                <div className="bg-white rounded-md space-y-1">
-                  <p className="font-semibold text-xl text-gray-800 mb-1">
-                    Type of Spinal Deformities
-                  </p>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    <span className="font-semibold">Kyphosis:</span> Involves
-                    upper back curving back and forming a hump.
-                  </p>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    <span className="font-semibold">Lordosis:</span> Involves
-                    lower back curving inward.
-                  </p>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    <span className="font-semibold">Scoliosis:</span> Frontal
-                    deformity in which the spine deviates right or left when
-                    observed from the front or back.
-                  </p>
-                </div>
-
-                {/* Risk Factors */}
-                <div className="bg-white rounded-md pt-5">
-                  <h2 className="text-[#273c76] font-semibold text-xl">
-                    What are the risk factors for spinal deformities?
-                  </h2>
-                  <ul className="list-disc list-inside text-lg text-gray-700 space-y-1">
-                    <li>
-                      Many cases of scoliosis have no identifiable cause.
-                      (Adolescent Idiopathic Scoliosis)
-                    </li>
-                    <li>
-                      There are a few known genetic/Congenital conditions that
-                      may put someone at risk of developing scoliosis, including
-                      cerebral palsy, muscular dystrophy, and achondroplasia,
-                      which is a condition affecting cartilage.
-                    </li>
-                    <li>
-                      For Kyphosis, risk factors include poor posture, fractures
-                      from osteoporosis, post-infection, or post-injury.
-                    </li>
-                    <li>
-                      Osteoporosis is also a risk factor for Lordosis. Slipped
-                      vertebrae and obesity may also cause the condition.
-                    </li>
-                    <li>
-                      Ankylosing Spondylitis where spine fuse like bamboo spine
-                    </li>
-                  </ul>
+              <div className="">
+                <div className="space-y-4">
+                  <div className="bg-white rounded-md p-4">
+                    <p className="font-semibold text-xl text-gray-800 mb-2">
+                      Types of Spinal Deformities
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      <strong>Kyphosis:</strong> A hump-like curvature in the
+                      upper back.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      <strong>Lordosis:</strong> An inward curvature of the
+                      lower back.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      <strong>Scoliosis:</strong> A sideways deviation, where
+                      the spine curves left or right when viewed from the front
+                      or back.
+                    </p>
+                  </div>
+                  <Image
+                    src="/Spine/spinal-deformities.jpg"
+                    height={10000}
+                    width={10000}
+                    className=""
+                  />
+                  {/* Risk Factors */}
+                  <div className="bg-white rounded-md p-4">
+                    <h2 className="text-[#273c76] font-semibold text-xl mb-2">
+                      What are the risk factors for spinal deformities?
+                    </h2>
+                    <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
+                      <li>
+                        Idiopathic scoliosis, often occurring without a known
+                        cause.
+                      </li>
+                      <li>
+                        Genetic and congenital conditions, e.g., cerebral palsy,
+                        muscular dystrophy, achondroplasia.
+                      </li>
+                      <li>
+                        Kyphosis risk factors: poor posture, osteoporosis,
+                        infections, injuries.
+                      </li>
+                      <li>
+                        Lordosis risk factors: osteoporosis, vertebral slippage,
+                        obesity.
+                      </li>
+                      <li>
+                        Ankylosing spondylitis causing a bamboo spine
+                        appearance.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <Image
-                src="/Spine/spinal-deformities.jpg"
-                height={250}
-                width={550}
-              />
-            </div>
 
-            {/* Symptoms */}
-            <div className="bg-white rounded-md">
-              <h2 className="text-[#273c76] font-semibold text-xl">
-                What are the symptoms of spinal deformity?
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Symptoms differ, depending on the type of deformity. They may
-                take the form of:
-              </p>
-              <ul className="list-disc list-inside text-lg text-gray-700 leading-relaxed">
-                <li>
-                  <span className="font-semibold">Pain:</span> For scoliosis,
-                  this pain may occur in the upper spine and the ribs.
-                </li>
-                <li>
-                  <span className="font-semibold">
-                    Feeling of being off balance or difficulty walking or
-                    standing:
-                  </span>{" "}
-                  When the spine isn’t in correct alignment, the body and head
-                  aren’t either.
-                </li>
-                <li>
-                  <span className="font-semibold">
-                    Visible curve (hunched over):
-                  </span>{" "}
-                  In kyphosis, in particular, the outer curve in the upper back
-                  may be noticeable. In scoliosis, one shoulder blade, or hip,
-                  may appear higher than the other.
-                </li>
-                <li>
-                  <span className="font-semibold">No symptoms:</span> For some
-                  patients with mild deformities, the curves may not cause any
-                  symptoms.
-                </li>
-              </ul>
-            </div>
-
-            {/* Diagnosis */}
-            <div className="bg-white rounded-md">
-              <h2 className="text-[#273c76] font-semibold text-xl">
-                How are spinal deformities diagnosed?
-              </h2>
-              <div className="space-y-1">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  To diagnose a spinal deformity, a specialist will perform:
+              {/* Symptoms */}
+              <div className="bg-white rounded-md p-4">
+                <h2 className="text-[#273c76] font-semibold text-xl mb-2">
+                  What are the symptoms of spinal deformity?
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-2">
+                  Symptoms vary by deformity type and can include:
                 </p>
-                <ul className="list-disc list-inside text-lg text-gray-700">
-                  <li>A physical examination</li>
+                <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
                   <li>
-                    X-rays of the spine- which will be x rays whole spine
-                    include both shoulder and and proximal thighs
+                    <strong>Pain:</strong> Often felt in the upper spine or ribs
+                    for scoliosis.
                   </li>
                   <li>
-                    Magnetic resonance imaging (MRI) – usually to rule out any
-                    underlying spinal cord pathology and if any then has to
-                    address before deformity correction
+                    <strong>Imbalance or difficulty standing:</strong>{" "}
+                    Misalignment can lead to posture issues.
                   </li>
                   <li>
-                    Computerized tomography (CT) scans, in order to analyze the
-                    internal bony structure of the spine and for surgical
-                    planning
+                    <strong>Visible curvature:</strong> Noticeable hump in
+                    kyphosis or uneven shoulders in scoliosis.
+                  </li>
+                  <li>
+                    <strong>No symptoms:</strong> Some mild deformities are
+                    asymptomatic.
                   </li>
                 </ul>
               </div>
-            </div>
 
-            {/* Treatment */}
-            <div className="bg-white rounded-md">
-              <h2 className="text-[#273c76] font-semibold text-xl">
-                What are treatments for spinal deformities?
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                To treat spinal deformities, aim:
-              </p>
-              <ul className="list-disc list-inside text-lg text-gray-700 space-y-1">
-                <li>Relieve pain</li>
-                <li>Lighten the strains on the spine</li>
-                <li>
-                  prevent deterioration of spinal structures such as disks and
-                  vertebrae{" "}
-                </li>
-                <li>ease breathing if the lungs are affected</li>
-                <li>reduce the appearance of the deformity.</li>
-              </ul>
-              <p className="text-lg text-gray-700 leading-relaxed mt-4">
-                Intervention may not be needed if the deformity is not
-                progressing and the symptoms aren’t a problem for the patient.
-                In these cases, specialists will monitor the curve and treat
-                when necessary. There are also several methods of physical
-                therapies to treat spinal deformities by helping to reorient the
-                spine and slow down the advancement of the curve
-              </p>
-            </div>
+              {/* Diagnosis */}
+              <div className="bg-white rounded-md p-4">
+                <h2 className="text-[#273c76] font-semibold text-xl mb-2">
+                  How are spinal deformities diagnosed?
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-2">
+                  Diagnosis involves a specialist's evaluation through:
+                </p>
+                <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
+                  <li>Physical examination</li>
+                  <li>
+                    Full-spine X-rays including shoulders and proximal thighs
+                  </li>
+                  <li>MRI to rule out spinal cord issues</li>
+                  <li>
+                    CT scans for detailed bone structure analysis, aiding
+                    surgical planning
+                  </li>
+                </ul>
+              </div>
 
-            {/* Spinal Surgery */}
-            <div className="bg-white rounded-md">
-              <h2 className="text-[#273c76] font-semibold text-xl">
-                When is spinal surgery necessary?
-              </h2>
+              {/* Treatment */}
+              <div className="bg-white rounded-md p-4">
+                <h2 className="text-[#273c76] font-semibold text-xl mb-2">
+                  What are treatments for spinal deformities?
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-2">
+                  Treatment goals include:
+                </p>
+                <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
+                  <li>Pain relief</li>
+                  <li>Minimizing spinal strain</li>
+                  <li>Preserving spine structures like disks and vertebrae</li>
+                  <li>Facilitating breathing if lungs are impacted</li>
+                  <li>Improving deformity appearance</li>
+                </ul>
+                <p className="text-lg text-gray-700 leading-relaxed mt-4">
+                  If the deformity is stable and symptoms are minimal, regular
+                  monitoring may suffice. Physical therapies can also help
+                  correct spine orientation and slow curve progression.
+                </p>
+              </div>
 
-              <ul className="list-disc list-inside text-lg text-gray-700 space-y-1">
-                <li>When curve is symptomatically compressing your organs</li>
-                <li>if the curve continues to progress</li>
-                <li>
-                  if the pain become severe and is unresponsive to medical and
-                  conservative care.
-                </li>
-                <li>Severe back pain with neurogenic radicular pain</li>
-                <li>Neurological deterioration</li>
-              </ul>
-              <p className="text-lg text-gray-700 leading-relaxed mt-4">
-                Spinal surgery involves mobilizing and straightening the spine,
-                and then placement of instrumentation with a spinal fusion in
-                order to hold the spine in the new position and prevent further
-                progression of the curve.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mt-4">
-                Spine surgeon use a combination of screws and rods and bones
-                (taken from another part of the body) to encourage growth of new
-                bones in better positions.Patients can expect to recover from
-                this surgery within 3 months.
-              </p>
-            </div>
+              {/* Spinal Surgery */}
+              <div className="bg-white rounded-md p-4">
+                <h2 className="text-[#273c76] font-semibold text-xl mb-2">
+                  When is spinal surgery necessary?
+                </h2>
+                <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
+                  <li>Compression of organs by the spinal curve</li>
+                  <li>Progressive curvature</li>
+                  <li>Severe, unresponsive pain</li>
+                  <li>Radicular pain or neurological decline</li>
+                </ul>
+                <p className="text-lg text-gray-700 leading-relaxed mt-4">
+                  Surgery involves realigning the spine with instrumentation and
+                  spinal fusion, holding it in the corrected position to prevent
+                  further curvature.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed mt-4">
+                  Surgeons use rods, screws, and bone grafts to encourage stable
+                  bone growth. Recovery generally takes about 3 months.
+                </p>
+              </div>
 
-            {/* Treatment Differences */}
-            <div className="bg-white rounded-md">
-              <h2 className="text-[#273c76] font-semibold text-xl">
-                Are spinal deformities treated differently in children, adults,
-                and the elderly?
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Children and adults are treated differently. When treating
-                children with spinal deformities, nonsurgical treatments are
-                often chosen since children's bones are still developing. A
-                brace, for example, can direct a child’s growing spine into the
-                right alignment. In adults, the same treatment would be less
-                effective because the spine is already rigid in its position.
-              </p>
-
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                In older adults, if osteoporosis is the underlying cause of the
-                deformity, we may treat it with calcium, hormone replacement
-                therapy, or weight-bearing exercises. Bracing is another
-                nonsurgical option for adults. It will not change the position
-                of the spine, but it may ease pressure and pain. Orthotics (shoe
-                inserts) can also help reduce back pain if the legs have been
-                affected by the spine’s changing shape.
-              </p>
+              {/* Treatment Differences */}
+              <div className="bg-white rounded-md p-4">
+                <h2 className="text-[#273c76] font-semibold text-xl mb-2">
+                  Are spinal deformities treated differently in children,
+                  adults, and the elderly?
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Treatment differs by age: Children’s bones are still growing,
+                  so nonsurgical treatments like braces can help guide spinal
+                  growth. For adults, braces may ease pain without changing
+                  spine alignment.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  For older adults with osteoporosis, treatment may include
+                  calcium, hormone therapy, and exercises to enhance bone
+                  density. Braces and orthotics help reduce discomfort without
+                  altering the spine’s position.
+                </p>
+              </div>
             </div>
           </div>
         </div>
