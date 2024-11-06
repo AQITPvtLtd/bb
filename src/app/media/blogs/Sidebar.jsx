@@ -32,19 +32,29 @@ const Sidebar = () => {
             </p>
           </div>
 
-          {blogs.map((n) => (
-            <li key={n.id}>
-              <div>
-                <Link href={`/media/blogs/${n.id}`} className="flex hover:translate-x-2 transition duration-300 ease-in-out">
-                  <div className="flex gap-1 items-center hover:text-[#07a496]">
-                    <AiOutlineDoubleRight />
-
-                    <h2 className="text-xl font-medium">{n.heading}</h2>
-                  </div>
-                </Link>
-              </div>
-            </li>
-          ))}
+          <table>
+            <tbody>
+              {blogs.map((n) => (
+                <tr
+                  key={n.id}
+                  className="hover:translate-x-2 transition duration-300 ease-in-out"
+                >
+                  <td>
+                    <div className="flex gap-1 items-center hover:text-[#07a496]">
+                      <AiOutlineDoubleRight />
+                    </div>
+                  </td>
+                  <td>
+                    <Link href={`/media/blogs/${n.id}`}>
+                      <div className="flex gap-1 items-center hover:text-[#07a496]">
+                        <h2 className="text-xl font-medium">{n.heading}</h2>
+                      </div>
+                    </Link>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </ul>
       </div>
     </div>
