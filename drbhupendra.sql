@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 24, 2024 at 09:07 AM
+-- Generation Time: Nov 06, 2024 at 06:14 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -58,6 +58,52 @@ CREATE TABLE `form` (
   `Query` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `testimonials`
+--
+
+CREATE TABLE `testimonials` (
+  `id` int(11) NOT NULL,
+  `src` varchar(10000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `testimonials`
+--
+
+INSERT INTO `testimonials` (`id`, `src`) VALUES
+(1, 'https://www.youtube.com/embed/7xhSY2B1mZY?si=DQKlRNa892eA3pEi'),
+(2, 'https://www.youtube.com/embed/w4j6SdpJZdw?si=jsswGKi5E5s_Ym9T'),
+(3, 'https://www.youtube.com/embed/97cH5u8vxO4'),
+(4, 'https://www.youtube.com/embed/SdgTR_uw8uE?si=p20Ry9OqR3Mo4QVr');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `video_gallery`
+--
+
+CREATE TABLE `video_gallery` (
+  `id` int(11) NOT NULL,
+  `src` varchar(10000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `video_gallery`
+--
+
+INSERT INTO `video_gallery` (`id`, `src`) VALUES
+(1, 'https://www.youtube.com/embed/7xhSY2B1mZY?si=DQKlRNa892eA3pEi'),
+(2, 'https://www.youtube.com/embed/yo9SbaGEWzM?si=4Et6_9-lUvmU2hH3'),
+(3, 'https://www.youtube.com/embed/w4j6SdpJZdw?si=jsswGKi5E5s_Ym9T'),
+(4, 'https://www.youtube.com/embed/SdgTR_uw8uE?si=p20Ry9OqR3Mo4QVr'),
+(5, 'https://www.youtube.com/embed/kWhXaBhSQh8?si=f0D4rVRpjrFLVESW'),
+(6, 'https://www.youtube.com/embed/Sx_f1O9-_Ng?si=L3SozFRIgCRtyoHR'),
+(7, 'https://www.youtube.com/embed/97cH5u8vxO4'),
+(8, 'https://www.youtube.com/embed/gsLLcB8OfVU?si=mGKCC4WBke5aUYov');
+
 --
 -- Indexes for dumped tables
 --
@@ -66,6 +112,18 @@ CREATE TABLE `form` (
 -- Indexes for table `blog`
 --
 ALTER TABLE `blog`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `testimonials`
+--
+ALTER TABLE `testimonials`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `video_gallery`
+--
+ALTER TABLE `video_gallery`
   ADD PRIMARY KEY (`id`);
 
 --
