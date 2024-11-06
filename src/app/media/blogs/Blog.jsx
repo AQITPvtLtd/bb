@@ -26,7 +26,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8">
+    <div className="">
       <div className="relative">
         <Image
           src="/Blog/background.png"
@@ -44,7 +44,7 @@ const Blog = () => {
       {error ? (
         <p className="text-red-500 text-center mt-6">{error}</p>
       ) : (
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4 sm:px-6 lg:px-8">
           {blogs.map((n) => (
             <li
               key={n.id}
@@ -53,7 +53,7 @@ const Blog = () => {
               <Image
                 src={`/Blog/${n.img}`}
                 alt={n.heading}
-                className="w-full h-64 object-cover"
+                className="w-full h-auto"
                 height={100}
                 width={1000}
               />
@@ -64,7 +64,7 @@ const Blog = () => {
                   <p className="text-gray-800 text-sm mb-4">{n.date}</p>
                 </div>
                 <p
-                  className="text-gray-700"
+                  className="text-gray-700 line-clamp-3"
                   dangerouslySetInnerHTML={{ __html: n.shortcontent }}
                 ></p>
                 <Link href={`/media/blogs/${n.id}`} className="flex mb-3 py-4">
