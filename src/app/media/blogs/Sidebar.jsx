@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="sm:mt-[75px] lg:mt-[100px] mt-[75px] px-4 sm:px-6 lg:px-8 p-6 border-2 rounded-2xl h-screen">
+      <div className="lg:mt-8 mt-3 px-4 sm:px-6 lg:px-8 p-6 border-2 rounded-2xl h-screen">
         <ul className="h-screen">
           <div className="">
             <p className="text-[#07a496] font-semibold text-2xl py-2 ">
@@ -45,9 +45,9 @@ const Sidebar = () => {
                     </div>
                   </td>
                   <td>
-                    <Link href={`/media/blogs/${n.id}`}>
+                    <Link href={`/media/blogs/${n.url}`}>
                       <div className="flex gap-1 items-center hover:text-[#07a496]">
-                        <h2 className="text-xl font-medium">{n.heading}</h2>
+                        <h2 className="text-lg font-medium">{n.heading}</h2>
                       </div>
                     </Link>
                   </td>

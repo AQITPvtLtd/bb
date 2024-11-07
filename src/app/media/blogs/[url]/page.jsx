@@ -2,7 +2,7 @@ import React from "react";
 import Detailedblog from "./Detailedblog";
 
 const page = ({ params }) => {
-  const id = params.id;
+  const id = params.url;
   return (
     <div>
       <Detailedblog id={id} />

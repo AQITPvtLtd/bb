@@ -14,7 +14,7 @@ const Blog = () => {
       try {
         const response = await getBlog();
         if (response?.results) {
-          setBlogs(response.results);
+          setBlogs(response.results.reverse());
         } else {
           throw new Error(response?.message || "Invalid response structure");
         }
@@ -48,7 +48,7 @@ const Blog = () => {
           {blogs.map((n) => (
             <li
               key={n.id}
-              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl"
+              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl"
             >
               <Image
                 src={`/Blog/${n.img}`}
@@ -67,7 +67,7 @@ const Blog = () => {
                   className="text-gray-700 line-clamp-3"
                   dangerouslySetInnerHTML={{ __html: n.shortcontent }}
                 ></p>
-                <Link href={`/media/blogs/${n.id}`} className="flex mb-3 py-4">
+                <Link href={`/media/blogs/${n.url}`} className="flex mb-3 py-4">
                   <div className="bg-[#07a496] p-3 text-white rounded-xl">
                     Read More
                   </div>
