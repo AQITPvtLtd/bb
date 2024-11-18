@@ -7,11 +7,10 @@ export async function POST(request) {
   try {
     const { name, mobile, date } = await request.json();
     const unique_id = uuid();
-    {console.log({ name, mobile, date })}
     // Insert data into the database
     await new Promise((resolve, reject) => {
       connection.query(
-        "INSERT INTO appoitment(id, name,mobile ,date) VALUES (?, ?, ?, ?)",
+        "INSERT INTO appoitment(id, name, mobile ,date) VALUES (?, ?, ?, ?)",
         [unique_id, name, mobile, date],
         (err, results, fields) => {
           if (err) {

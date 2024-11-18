@@ -8,9 +8,6 @@ export async function POST(request) {
   try {
     const { name, Email, Phone, Query } = await request.json();
     const unique_id = uuid();
-    {
-      console.log({ name, Email, Phone, Query });
-    }
     // Use pool.query with async/await for promises
 
     const [results] = await pool.query(

@@ -39,8 +39,8 @@ const Sidebar = () => {
                   key={n.id}
                   className="hover:translate-x-2 transition duration-300 ease-in-out"
                 >
-                  <td>
-                    <div className="flex gap-1 items-center hover:text-[#07a496]">
+                  <td className="align-top">
+                    <div className="mt-2 hover:text-[#07a496]">
                       <AiOutlineDoubleRight />
                     </div>
                   </td>

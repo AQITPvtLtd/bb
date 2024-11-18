@@ -29,7 +29,6 @@ const Contact = () => {
     e.preventDefault();
     const response = await form(formData);
 
-    console.log(response);
     if (response.success) {
       Swal.fire({
         title: "Form Submitted Successfully!",
@@ -173,7 +172,6 @@ const Contact = () => {
               width="100%"
               height="350"
               style={{ border: 0 }}
-              allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe> */}
@@ -183,7 +181,7 @@ const Contact = () => {
               width="100%"
               height="350"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
