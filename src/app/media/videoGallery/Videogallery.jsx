@@ -45,22 +45,6 @@ const Videogallery = () => {
           ))}
         </div>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-10">
-        {videos.map((v) => (
-          <div className="flex justify-center" key={v.id}>
-            <iframe
-              width="560"
-              height="315"
-              src={v.src}
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };
