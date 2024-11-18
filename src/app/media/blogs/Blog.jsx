@@ -4,7 +4,7 @@ import { SlCalender } from "react-icons/sl";
 import { getBlog } from "@/services/getBlog";
 import Link from "next/link";
 import Image from "next/image";
-
+import Moment from "react-moment";
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(null);
@@ -61,7 +61,9 @@ const Blog = () => {
                 <h2 className="text-xl font-semibold mb-2">{n.heading}</h2>
                 <div className="flex gap-3">
                   <SlCalender />
-                  <p className="text-gray-800 text-sm mb-4">{n.date}</p>
+                  <p className="text-gray-800 text-sm mb-4">
+                    <Moment format="MMMM DD, YYYY">{n?.date}</Moment>
+                  </p>
                 </div>
                 <p
                   className="text-gray-700 line-clamp-3"

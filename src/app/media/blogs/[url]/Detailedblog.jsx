@@ -5,7 +5,7 @@ import Image from "next/image";
 import { SlCalender } from "react-icons/sl";
 import Sidebar from "../Sidebar";
 import { FaUser } from "react-icons/fa";
-
+import Moment from "react-moment";
 const DetailedBlog = ({ id }) => {
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(null);
@@ -56,7 +56,7 @@ const DetailedBlog = ({ id }) => {
             <div className="flex justify-evenly w-full">
               <p className="mb-4 flex gap-2 items-center">
                 <SlCalender />
-                {obj?.date}
+                <Moment format="MMMM DD, YYYY">{obj?.date}</Moment>
               </p>
               <div className="flex gap-2">
                 <FaUser className="mt-1" />
