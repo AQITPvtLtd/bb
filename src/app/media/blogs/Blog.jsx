@@ -57,7 +57,7 @@ const Blog = () => {
                 height={100}
                 width={1000}
               />
-              <div className="p-6">
+              <div className="px-4 py-4">
                 <h2 className="text-xl font-semibold mb-2">{n.heading}</h2>
                 <div className="flex gap-3">
                   <SlCalender />
