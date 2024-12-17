@@ -66,7 +66,7 @@ const menuData = [
       },
       {
         id: 39,
-        title: "Rehabilitation Programme",
+        title: "Spine Rehabilitation Programme",
         newTab: false,
         path: "/special_service/rehabilitation",
       },

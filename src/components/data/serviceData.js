@@ -50,7 +50,7 @@ export const servicesdata = [
   },
   {
     id: 8,
-    name: "Rehabilitation Programme",
+    name: "Spine Rehabilitation Programme",
     image: "Rehabililtation.jpg",
     button: "Read More",
     link: "/special_service/rehabilitation",
