@@ -13,7 +13,7 @@ const Spondylolisthesis = () => {
             className="w-full h-[250px] object-cover"
             alt="Service Image"
           />
-          <div className="w-1/2 text-white pl-16 justify-center lg:text-5xl text-4xl lg:ml-0 ml-5 font-bold my-4 absolute inset-0 z-20 flex items-center">
+          <div className="w-1/2 text-white pl-16 justify-center lg:text-5xl md:text-4xl text-3xl lg:ml-0 ml-5 font-bold my-4 absolute inset-0 z-20 flex items-center">
             Spondylolisthesis
           </div>
         </div>
