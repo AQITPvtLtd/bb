@@ -85,7 +85,7 @@ const Spondylolisthesis = () => {
 
             <div>
               <li className="text-blue-500 font-semibold text-lg">
-                4. Traumatic Spondylolisthesis
+                Traumatic Spondylolisthesis
               </li>
               <ul className="list-disc list-inside space-y-2 pl-4 mt-2">
                 <li>
@@ -132,7 +132,7 @@ const Spondylolisthesis = () => {
             </li>
 
             <li>
-              <span className="font-semibold">Weak or Thin Bones:</span>
+              <span className="font-semibold">Weak or Thin Bones: </span>
               Conditions like osteoporosis can contribute to vertebral slippage.
             </li>
           </ul>
@@ -189,23 +189,23 @@ const Spondylolisthesis = () => {
                   Avoiding activities that exacerbate symptoms.
                 </li>
                 <li>
-                  <span className="font-semibold"> Physical Therapy:</span>
+                  <span className="font-semibold"> Physical Therapy: </span>
                   Strengthening the core and back muscles to stabilize the
                   spine.
                 </li>
 
                 <li>
-                  <span className="font-semibold"> Medications:</span>
+                  <span className="font-semibold"> Medications: </span>
                   Over-the-counter pain relievers and anti-inflammatory drugs.
                 </li>
 
                 <li>
-                  <span className="font-semibold"> Bracing:</span>
+                  <span className="font-semibold"> Bracing: </span>
                   Wearing a back brace to provide support and limit motion.
                 </li>
 
                 <li>
-                  <span className="font-semibold"> Injections:</span>
+                  <span className="font-semibold"> Injections: </span>
                   Epidural steroid injections to reduce inflammation and pain.
                 </li>
               </ul>
