@@ -184,7 +184,7 @@ const Spondylolisthesis = () => {
               <ul className="list-disc list-inside space-y-2 mb-8 pl-4 mt-2">
                 <li>
                   <span className="font-semibold">
-                    Rest and Activity Modification:
+                    Rest and Activity Modification:{" "}
                   </span>
                   Avoiding activities that exacerbate symptoms.
                 </li>
