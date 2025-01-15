@@ -14,7 +14,7 @@ const ConditionsTreated = () => {
         />
       </div>
       <div className="relative z-10">
-        <h2 className="text-4xl font-bold text-center mb-6 animate__animated animate__heartBeat">
+        <h2 className="text-4xl text-[#07a496] font-bold text-center mb-6 animate__animated animate__heartBeat">
           Conditions Treated
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
