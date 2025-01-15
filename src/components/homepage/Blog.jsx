@@ -70,7 +70,7 @@ const Blog = () => {
               </li>
             ))}
           </ul>
-        )}{" "}
+        )}
         <Link href={"/media/blogs"} className="flex justify-center">
           <div className="bg-[#07a496] py-4 p-6 text-white rounded-xl mt-6 font-semibold">
             Know More
