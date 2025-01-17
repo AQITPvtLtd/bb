@@ -182,6 +182,7 @@ const Contact = () => {
               height="350"
               style={{ border: 0 }}
               allowFullScreen=""
+              className="rounded-md"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>

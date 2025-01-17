@@ -21,7 +21,7 @@ const Testimonials = () => {
     fetchVideos();
   }, []);
   return (
-    <div className="bg-gray-100 flex flex-col items-center">
+    <div className="bg-gray-100 flex flex-col items-center lg:pb-10 pb-5">
       <h1 className="text-center text-4xl font-bold text-gray-800 mb-10 lg:pt-10">
         Testimonials
       </h1>
@@ -32,6 +32,7 @@ const Testimonials = () => {
               width="560"
               height="315"
               src={v.src}
+              className="rounded-2xl"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
