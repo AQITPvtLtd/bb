@@ -1,4 +1,3 @@
-// import uuid from "uuid";
 import nodemailer from "nodemailer";
 import pool from "@/helper/db";
 import { NextResponse } from "next/server";
@@ -6,16 +5,31 @@ import { v4 as uuid } from "uuid";
 
 export async function POST(request) {
   try {
-    const { name, Email, Phone, Query } = await request.json();
-    const unique_id = uuid();
-    // Use pool.query with async/await for promises
+    const formData = await request.formData();
+    const name = formData.get("name");
+    const Email = formData.get("Email");
+    const Phone = formData.get("Phone");
+    const Query = formData.get("Query");
+    const medicalReport = formData.get("medicalReport");
 
-    const [results] = await pool.query(
-      "INSERT INTO form(id, name ,Email ,Phone ,Query) VALUES (?,?,?,?,?)",
-      [unique_id, name, Email, Phone, Query]
+    const unique_id = uuid();
+
+    // Convert File to Buffer if a file is uploaded
+    let attachment = null;
+    let reportFilename = null;
+    if (medicalReport && medicalReport.name) {
+      const arrayBuffer = await medicalReport.arrayBuffer();
+      attachment = Buffer.from(arrayBuffer);
+      reportFilename = medicalReport.name;
+    }
+
+    // Insert into database (store only the filename if provided)
+    await pool.query(
+      "INSERT INTO form(id, date, name, Email, Phone, Query, medicalReport) VALUES (?, NOW(), ?, ?, ?, ?, ?)",
+      [unique_id, name, Email, Phone, Query, medicalReport ? medicalReport.name : ""]
     );
 
-    // Send email using nodemailer
+    // Configure Nodemailer
     const transporter = nodemailer.createTransport({
       service: "gmail",
       host: "smtp.gmail.com",
@@ -33,11 +47,15 @@ export async function POST(request) {
       subject: "Dr. Bhupendra Pratap Bharti Form",
       html: `<html>
               <body>
-                <h3>You've got a new mail from ${name}, their email is: ✉️${Email} And phone Number is ${Phone} </h3>
+                <h3>You've got a new mail from ${name}, their email is: ✉️${Email} and phone number is ${Phone}</h3>
                 <p>Message:</p>
                 <p>${Query}</p>
+                ${reportFilename ? `<p>Medical Report Attached: ${reportFilename}</p>` : ""}
               </body>
              </html>`,
+      attachments: attachment
+        ? [{ filename: reportFilename, content: attachment }]
+        : [],
     });
 
     // Send confirmation email to the user

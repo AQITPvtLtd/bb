@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2025 at 10:46 AM
+-- Generation Time: Feb 17, 2025 at 11:31 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `drbhupendra`
+-- Database: `bhupendrabharti`
 --
 
 -- --------------------------------------------------------
@@ -60,11 +60,14 @@ INSERT INTO `blog` (`id`, `img`, `heading`, `date`, `content`, `shortcontent`, `
 --
 
 CREATE TABLE `form` (
+  `s.no` int(11) NOT NULL,
+  `date` date NOT NULL,
   `id` varchar(200) NOT NULL,
   `name` varchar(200) NOT NULL,
   `Email` varchar(200) NOT NULL,
   `Phone` varchar(200) NOT NULL,
-  `Query` varchar(500) NOT NULL
+  `Query` varchar(500) NOT NULL,
+  `medicalReport` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -124,6 +127,12 @@ ALTER TABLE `blog`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `form`
+--
+ALTER TABLE `form`
+  ADD PRIMARY KEY (`s.no`);
+
+--
 -- Indexes for table `testimonials`
 --
 ALTER TABLE `testimonials`
@@ -144,6 +153,12 @@ ALTER TABLE `video_gallery`
 --
 ALTER TABLE `blog`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `form`
+--
+ALTER TABLE `form`
+  MODIFY `s.no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

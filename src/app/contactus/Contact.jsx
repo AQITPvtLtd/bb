@@ -1,10 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import React from "react";
-import Swal from "sweetalert2";
-import { form } from "@/services/user";
-import { useRouter } from "next/navigation";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAddHomeWork } from "react-icons/md";
 import { IoTimerSharp } from "react-icons/io5";
@@ -12,38 +8,8 @@ import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
+import Form from "./Form";
 const Contact = () => {
-  const router = useRouter();
-  const [formData, setformData] = useState({
-    name: "",
-    Email: "",
-    Phone: "",
-    Query: "",
-  });
-
-  const handleChange = (e) => {
-    setformData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await form(formData);
-
-    if (response.success) {
-      Swal.fire({
-        title: "Form Submitted Successfully!",
-        text: "You clicked the button!",
-        icon: "success",
-      });
-      router.push("/");
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Something went wrong!",
-      });
-    }
-  };
 
   return (
     <div className="overflow-hidden">
@@ -184,107 +150,13 @@ const Contact = () => {
               allowFullScreen=""
               className="rounded-md"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              // referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
 
         <div className="col-span-7 flex justify-center items-center py-10 overflow-hidden">
-          <div>
-            <h1 className="text-2xl font-semibold text-gray-800 py-3 px-3 lg:px-0">
-              Complete the fields below and we will follow{" "}
-              <br className="lg:block hidden" /> up with you
-            </h1>
-
-            <form
-              className="bg-white text-gray-800 p-8 rounded-lg shadow-md w-full max-w-lg overflow-hidden"
-              onSubmit={handleSubmit}
-            >
-              <div className="mb-6">
-                <label
-                  htmlFor="Name"
-                  className="block text-md font-medium mb-2"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter Your Name"
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-6">
-                <label
-                  htmlFor="Phone"
-                  className="block text-md font-medium mb-2"
-                >
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="Phone"
-                  name="Phone"
-                  placeholder="Enter Your Phone Number"
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  value={formData.Phone}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-6">
-                <label
-                  htmlFor="Email"
-                  className="block text-md font-medium mb-2"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="Email"
-                  name="Email"
-                  placeholder="Enter Your Email Address"
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  value={formData.Email}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-6">
-                <label
-                  htmlFor="Query"
-                  className="block text-md font-medium mb-2"
-                >
-                  Query
-                </label>
-                <textarea
-                  name="Query"
-                  id="Query"
-                  placeholder="Write Your Query Here.."
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  value={formData.Query}
-                  onChange={handleChange}
-                ></textarea>
-              </div>
-
-              <div>
-                <button
-                  type="submit"
-                  className="w-full text-white bg-[#07a496] py-3 rounded-lg hover:bg-[#07a496] focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
+          <Form />
         </div>
       </div>
     </div>

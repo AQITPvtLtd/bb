@@ -24,7 +24,7 @@ const Videogallery = () => {
     <div className="bg-gray-100 flex flex-col items-center">
       <h1 className="text-center text-4xl font-bold text-gray-800 mb-10 lg:pt-10">
         Video Gallery
-      </h1>
+      </h1> 
       {error ? (
         <p className="text-red-500 text-center mt-6">{error}</p>
       ) : (
@@ -38,7 +38,7 @@ const Videogallery = () => {
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
+                // referrerpolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
             </div>

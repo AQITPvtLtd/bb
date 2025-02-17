@@ -1,94 +1,65 @@
 "use client";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "animate.css";
-import { useState } from "react";
 import Image from "next/image";
-import { GrPrevious, GrNext } from "react-icons/gr";
 import Link from "next/link";
+import Form from "@/app/contactus/Form";
 
 function Banner() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  var settings = {
-    dots: false,
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    nextArrow: <GrNext color="white" size={30} />,
-    prevArrow: <GrPrevious color="white" size={30} />,
-    afterChange: (current) => setCurrentSlide(current),
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          swipeToSlide: true,
-        },
-      },
-    ],
-  };
-
   const data = [
     {
-      name: `We Can Help You Get Better &<br />Regain Your Health`,
+      name: `We Can Help You Get Better Regain Your Health`,
       img: "/Banner/family.jpg",
       url: "/knowDoctor",
     },
   ];
 
   return (
-    <div className="overflow-x-hidden relative bg-gradient-to-r from-[#07a496] to-[#04686e]">
-      <Slider {...settings} className="px-4 py-6 md:p-10">
-        {data.map((d, index) => (
+    <div>
+      <div className="overflow-x-hidden relative">
+        {data.map((d) => (
           <div key={d.name} className="relative w-full">
             <Image
               width={1920}
               height={800}
               src={d.img}
-              alt="slider-image"
-              className="w-full h-[60vh] md:h-[80vh] object-cover"
+              alt="banner-image"
+              className="w-full h-[80vh] md:h-[95vh] object-cover"
             />
-            {index === currentSlide && (
-              <div className="absolute top-20 md:top-44 left-4 md:left-5 w-[90%] md:w-auto h-auto flex flex-col justify-center items-start p-4 md:p-8 text-white bg-black bg-opacity-40">
-                <h1
-                  className={`text-2xl md:text-2xl lg:text-4xl font-bold mb-2 md:mb-4 animate__animated ${
-                    index === currentSlide ? "animate__fadeInDown" : ""
-                  }`}
-                  dangerouslySetInnerHTML={{ __html: d.name }}
-                ></h1>
-                <p
-                  className={`text-sm md:text-lg lg:text-2xl mb-4 md:mb-6 animate__animated ${
-                    index === currentSlide ? "animate__fadeInUp" : ""
-                  }`}
-                >
-                  {d.subheading}
-                </p>
-                <div
-                  className={`flex space-x-2 md:space-x-4 animate__animated ${
-                    index === currentSlide ? "animate__fadeInUp" : ""
-                  }`}
-                >
-                  <Link href={d.url}>
-                    <button className="px-4 py-2 md:px-6 md:py-3 bg-[#07a496] text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition">
-                      Learn More
-                    </button>
-                  </Link>
-                  <Link href="/contactus">
-                    <button className="px-4 py-2 md:px-6 md:py-3 bg-[#07a496] text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition">
-                      Contact Us
-                    </button>
-                  </Link>
+            <div className="grid md:grid-cols-12 lg:gap-20 absolute top-5 left-4 md:left-5 w-[90%] md:w-auto items-center">
+              <div className="col-start-1 col-span-5 gap-6 w-full max-w-6xl bg-black bg-opacity-40 lg:h-1/3 sm:h-[60%] mt-32 lg:mt-0 p-6 md:p-10 text-white rounded-lg">
+                {/* Left Content */}
+                <div className="flex flex-col items-start">
+                  <h1
+                    className="text-2xl md:text-xl lg:text-2xl font-bold mb-2 animate__animated animate__fadeInDown"
+                    dangerouslySetInnerHTML={{ __html: d.name }}
+                  ></h1>
+                  <div className="flex space-x-2 md:space-x-4 animate__animated animate__fadeInUp">
+                    <Link href={d.url}>
+                      <button className="px-4 py-2 md:px-6 md:py-3 bg-[#07a496] text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition">
+                        Learn More
+                      </button>
+                    </Link>
+                    <Link href="/contactus">
+                      <button className="px-4 py-2 md:px-6 md:py-3 bg-[#07a496] text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition">
+                        Contact Us
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            )}
+              <div className="col-start-7 col-span-5 md:block hidden">
+                <Form />
+              </div>
+            </div>
           </div>
         ))}
-      </Slider>
+
+
+      </div>
+
+      <div className="md:hidden flex pb-5 px-5 mt-4">
+        <Form />
+      </div>
     </div>
   );
 }

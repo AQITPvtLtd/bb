@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const DrBhupendra = () => {
   return (
-    <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 items-center">
-        <div className="lg:col-start-2 lg:col-span-4 flex justify-center sm:justify-start">
+    <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 items-start">
+        <div className=" lg:col-span-4 flex justify-center sm:justify-start">
           <Image
             src={"/drBhupendra/Dr_Bhupendra-Bharti.jpg"}
             width={500}
@@ -15,27 +15,27 @@ const DrBhupendra = () => {
             className="rounded-lg shadow-md"
           />
         </div>
-        <div className="lg:col-span-6">
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+        <div className="lg:col-span-8">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
             Dr. Bhupendra Pratap Bharti
           </h1>
-          <h3 className="text-lg sm:text-xl font-semibold text-primary mb-2">
+          <h3 className="text-lg sm:text-xl font-semibold text-primary mb-1">
             Consultant Orthopedic Spine Surgery
           </h3>
-          <div className="mb-6">
+          <div className="mb-1">
             <h4 className="text-lg font-semibold text-gray-700">
               Qualification
             </h4>
-            <p className="text-gray-600 mt-2 leading-relaxed">
+            <p className="text-gray-600 mt-2 leading-relaxed lg:text-justify">
               MBBS, MS (Orthopaedic) Spine Fellowship - Indian Spinal Injuries
               Centre, India Fellowship Anterior Spine surgery - Hongkong AO
               Spine Inland Fellowship - Park clinic India Endoscopy UBE
               Fellowship Busan - South Korea
             </p>
           </div>
-          <div className="mb-6">
+          <div className="mb-1">
             <h4 className="text-lg font-semibold text-gray-700">Experience</h4>
-            <p className="text-gray-600 mt-2 leading-relaxed">
+            <p className="text-gray-600 mt-2 leading-relaxed lg:text-justify">
               Associate director and unit head, Center for Orthopaedic Spine
               Surgery at MAX Super Speciality Hospital Patparganj, Delhi. Worked
               as a Consultant in Centre for Orthopedics Spine Surgery in
@@ -47,7 +47,7 @@ const DrBhupendra = () => {
             <h4 className="text-lg font-semibold text-gray-700">
               Specializes in:
             </h4>
-            <p className="text-gray-600 mt-2 leading-relaxed">
+            <p className="text-gray-600 mt-2 leading-relaxed lg:text-justify">
               Surgical and non-surgical management of spinal disorders involving
               neck and back utilizing turn of the century minimally invasive
               techniques (UBE endoscopy/ Microscpic).

@@ -2,8 +2,8 @@ import React from "react";
 
 const VideoGallery = () => {
   return (
-    <div className="bg-gray-100 flex flex-col items-center mt-16">
-      <h1 className="text-center text-4xl font-bold text-[#07a496] mb-10 lg:pt-10">
+    <div className="bg-gray-100 flex flex-col items-center py-10 mt-5">
+      <h1 className="text-center text-4xl font-bold text-[#07a496] mb-10">
         Video Gallery
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-10">
@@ -15,7 +15,7 @@ const VideoGallery = () => {
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
+            // referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded-lg shadow-lg lg:h-[315px] lg:w-[560px] h-[200px] w-[350px]"
           ></iframe>
@@ -30,7 +30,7 @@ const VideoGallery = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             className="rounded-lg shadow-lg lg:h-[315px] lg:w-[560px] h-[200px] w-[350px]"
-            referrerpolicy="strict-origin-when-cross-origin"
+            // referrerpolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         </div>
