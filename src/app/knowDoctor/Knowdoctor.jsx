@@ -80,8 +80,54 @@ const Knowdoctor = () => {
         </div>
       </div>
 
-      <h1 className="lg:text-5xl font-semibold md:text-5xl sm:text-3xl text-3xl px-20 lg:py-10 py-5">
-        Frequently <br /> asked questions
+      <div className="lg:grid lg:grid-cols-12 gap-6 bg-cyan-500 py-10 px-5">
+        {/* Mission Section */}
+        <div className="col-start-2 col-span-5 flex flex-col items-center text-center">
+          <Image
+            src="/About/mission.png"
+            width={250}
+            height={250}
+            alt="Our Mission"
+            className="rounded-lg object-cover mb-4"
+          />
+          <h2 className="text-2xl font-semibold mb-4 text-white">Our Mission</h2>
+          <p className="text-gray-100 max-w-lg">
+            Our mission is to provide world-class orthopedic and spine care by
+            utilizing the latest advancements in minimally invasive techniques and
+            evidence-based treatments. We are committed to enhancing the quality of
+            life for our patients through compassionate care, personalized treatment
+            plans, and innovative surgical solutions.
+          </p>
+        </div>
+
+        {/* White Divider Line */}
+        <div className="col-span-1 flex justify-center">
+          <div className="h-full w-[2px] bg-white"></div>
+        </div>
+
+        {/* Vision Section */}
+        <div className="col-span-5 flex flex-col items-center text-center">
+          <Image
+            src="/About/vision.png"
+            width={250}
+            height={250}
+            alt="Our Vision"
+            className="rounded-lg object-cover mb-4"
+          />
+          <h2 className="text-2xl font-semibold mb-4 text-white">Our Vision</h2>
+          <p className="text-gray-100 max-w-lg">
+            Our vision is to be a leading center for excellence in orthopedic and
+            spine surgery, recognized for our expertise, innovation, and
+            patient-centered approach. We strive to set new benchmarks in healthcare
+            by continuously advancing our knowledge, adopting state-of-the-art
+            technologies, and maintaining the highest standards of ethical and
+            professional practice.
+          </p>
+        </div>
+      </div>
+
+      <h1 className="lg:text-5xl font-semibold md:text-3xl text-2xl px-20 lg:py-10 py-5">
+        Frequently <br className="lg:block hidden" /> asked questions
       </h1>
       <div id="accordion-collapse" className="lg:px-20 px-14 gap-20">
         {/* First Accordion Item */}
