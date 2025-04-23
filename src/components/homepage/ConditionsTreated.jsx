@@ -1,7 +1,33 @@
-import React from "react";
+"use client";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { Conditions } from "../data/conditions";
 import Image from "next/image";
+// import { useScrollDirection } from "../hooks/useScrollDirection"; // <-- path adjust karo
+import { useScrollDirection } from "@/hooks/useScrollDirection";
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
 const ConditionsTreated = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+  const scrollDirection = useScrollDirection();
+
+  const displayedConditions =
+    scrollDirection === "up" ? [...Conditions].reverse() : Conditions;
+
   return (
     <div className="relative p-6 rounded-lg shadow-md mt-10">
       <div className="absolute inset-0">
@@ -17,11 +43,18 @@ const ConditionsTreated = () => {
         <h2 className="text-4xl text-[#07a496] font-bold text-center mb-6 animate__animated animate__heartBeat">
           Conditions Treated
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {Conditions.map((s) => (
-            <div
+        <motion.div
+          ref={ref}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+          variants={container}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
+          {displayedConditions.map((s) => (
+            <motion.div
               key={s.id}
               className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+              variants={item}
             >
               <div className="text-4xl font-extrabold text-[#07a496] mb-2">
                 {s.number}
@@ -29,9 +62,9 @@ const ConditionsTreated = () => {
               <div className="text-lg font-semibold text-gray-700">
                 {s.title}
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

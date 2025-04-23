@@ -248,9 +248,13 @@ const Knowdoctor = () => {
             aria-labelledby="accordion-collapse-heading-4"
           >
             <div className="p-5 border-x-1 border-black">
-              <p className="mb-2">Assocition of Spine Surgery of India</p>
-              <p className="mb-2">Indain Orthopaedic Association</p>
-              <p className="mb-2"> AO spine</p>
+              <p className="mb-2">
+                <ul className="list-disc list-outside px-5">
+                  <li>Assocition of Spine Surgery of India</li>
+                  <li>Indain Orthopaedic Association</li>
+                  <li>AO spine</li>
+                </ul>
+              </p>
             </div>
           </div>
         </div>
@@ -276,14 +280,18 @@ const Knowdoctor = () => {
           >
             <div className="p-5 border-x-1 border-black">
               <p className="mb-2">
-                {/* Dr. Santosh Ghai has an overall experience of 11 years. */}
+                <ul className="list-disc list-outside px-5">
+                  <li>Short term results of cementless total hip arthroplasty in sicklers (IJO July 2015 Vol. 49 issue 4)</li>
+                  <li>Numerous publication and presentations</li>
+                  <li>Faculty for Spine Super Specialty Program FNB– Spine Surgery & DNB - Ortho</li>
+                </ul>
               </p>
             </div>
           </div>
         </div>
 
         {/* sexth Accordion Item*/}
-        <div className="border border-black mb-4">
+        {/* <div className="border border-black mb-4">
           <h2 id="accordion-collapse-heading-6">
             <button
               type="button"
@@ -303,11 +311,11 @@ const Knowdoctor = () => {
           >
             <div className="p-5 border-x-1 border-black">
               <p className="mb-2">
-                {/* Dr. Santosh Ghai has an overall experience of 11 years. */}
+               
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

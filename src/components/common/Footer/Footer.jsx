@@ -136,24 +136,24 @@ const Footer = () => {
           </p>
           <div className="mt-4">
             <h4 className="font-bold">OPD Schedule</h4>
-            
-            <p className="flex items-center gap-2">
-              <FaClock className="text-xl" /> Mon/Tues/Thurs/Sat: 10am - 2pm , Wed: 10am - 12pm
+
+            <p className="flex gap-2">
+              <FaClock className="text-xl mt-1" /> Mon/Tues/Thurs/Sat: 10am - 2pm , Wed: 10am - 12pm
             </p>
           </div>
           <div className="mt-4 space-y-3">
             <Link
               href="tel:+91-9205138507"
-              className="flex items-center gap-2 hover:text-gray-300 transition duration-300"
+              className="flex gap-2 hover:text-gray-300 transition duration-300"
             >
-              <IoMdCall className="text-xl" /> For Appointment: +91-92051 38507
+              <IoMdCall className="text-xl mt-1" /> For Appointment: +91-92051 38507
             </Link>
 
             <Link
               href="mailto:drbhupendrabharti@gmail.com"
-              className="flex items-center gap-2 hover:text-gray-300 transition duration-300"
+              className="flex gap-2 hover:text-gray-300 transition duration-300"
             >
-              <MdEmail className="text-xl" /> Email: drbhupendrabharti@gmail.com
+              <MdEmail className="text-xl mt-1" /> Email: drbhupendrabharti@gmail.com
             </Link>
           </div>
         </div>
@@ -163,9 +163,9 @@ const Footer = () => {
       <div className="flex justify-center gap-6 pt-7">
         {[
           { icon: <FaInstagram />, href: "https://www.instagram.com/drbhupendrabharti/?hl=en", target: "__blank" },
-          { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=100066588493905", target: "__blank"},
-          { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/dr-bhupendra-bharti/", target:"__blank" },
-          { icon: <FaYoutube />, href: "https://www.youtube.com/@shreshtha.spine_1", target:"__blank" },
+          { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=100066588493905", target: "__blank" },
+          { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/dr-bhupendra-bharti/", target: "__blank" },
+          { icon: <FaYoutube />, href: "https://www.youtube.com/@shreshtha.spine_1", target: "__blank" },
         ].map((social, index) => (
           <Link
             key={index}
