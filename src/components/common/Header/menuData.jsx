@@ -79,10 +79,10 @@ const menuData = [
     submenu: [
       {
         id: 41,
-        title: "Deformity correction",
+        title: "Deformity Correction",
         newTab: false,
-        path: "/conditions_treated/deformitycorrection",
-      },  {
+        path: "/conditions_treated/deformity-correction",
+      }, {
         id: 42,
         title: "Degenerative Spine Conditions",
         newTab: false,

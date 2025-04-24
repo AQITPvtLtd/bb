@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 const Deformity = () => {
   return (
     <div>
@@ -33,8 +34,9 @@ const Deformity = () => {
               This is the story of a 17-year-old girl who battled congenital scoliosis caused by a hemivertebra at the L4 level, and how timely surgical intervention helped transform her life.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-4 py-8">
-              <div>
+            <div className="md:grid md:grid-cols-12 gap-6 items-center px-4 py-8">
+
+              <div className='col-span-8'>
                 <h2 className="text-2xl font-bold text-primary">
                   Patient Presentation
                 </h2>
@@ -67,25 +69,28 @@ const Deformity = () => {
                 </p>
               </div>
 
-              <Image
-                src={"/Deformity/img1.jpeg"}
-                width={500}
-                height={500}
-                alt="Dr. Bhupendra Pratap Bharti"
-                className="rounded-lg shadow-md"
-              />
+              <div className='col-span-4'>
+                <Image
+                  src={"/Deformity/img1.jpeg"}
+                  width={500}
+                  height={500}
+                  alt="Dr. Bhupendra Pratap Bharti"
+                  className="rounded-lg h-96 object-contain"
+                />
+              </div>
             </div>
 
-            <div className="md:grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-4 py-8 flex flex-col-reverse">
-              <Image
-                src="/Deformity/img2.jpeg"
-                width={500}
-                height={500}
-                alt="Dr. Bhupendra Pratap Bharti"
-                className="rounded-lg shadow-md w-full h-auto"
-              />
-
-              <div>
+            <div className="md:grid md:grid-cols-12 gap-6 items-center px-4 py-8 flex flex-col-reverse">
+              <div className='col-span-4'>
+                <Image
+                  src="/Deformity/img2.jpeg"
+                  width={500}
+                  height={500}
+                  alt="Dr. Bhupendra Pratap Bharti"
+                  className="rounded-lg shadow-md w-full h-96 object-contain"
+                />
+              </div>
+              <div className='col-span-8'>
                 <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
                   Understanding Hemivertebra and Its Impact
                 </h2>
@@ -98,15 +103,15 @@ const Deformity = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-4 py-8">
+            <div className="md:grid md:grid-cols-12 gap-6 items-center px-4 py-8">
 
-              <div>
+              <div className='col-span-8'>
                 <h2 className="text-2xl font-bold text-primary mb-4">
                   Surgical Plan: Hemivertebra Resection with Short-Segment Fixation
                 </h2>
 
                 <p className="mb-4">
-                  After thorough evaluation and counseling, Dr. Bhupendra Pratap Bharti, a leading spine deformity correction specialist, recommended surgical correction to prevent further progression of the curve and relieve her symptoms.
+                  After thorough evaluation and counseling, <span className='font-semibold'> Dr. Bhupendra Pratap Bharti </span>, a leading spine deformity correction specialist, recommended surgical correction to prevent further progression of the curve and relieve her symptoms.
                 </p>
 
                 <p className="mb-4">
@@ -126,24 +131,28 @@ const Deformity = () => {
                 </p>
               </div>
 
-              <Image
-                src="/Deformity/img3.jpeg"
-                width={500}
-                height={500}
-                alt="Dr. Bhupendra Pratap Bharti"
-                className="rounded-lg shadow-md w-full h-auto"
-              />
+              <div className='col-span-4'>
+                <Image
+                  src="/Deformity/img3.jpeg"
+                  width={500}
+                  height={500}
+                  alt="Dr. Bhupendra Pratap Bharti"
+                  className="rounded-lg shadow-md w-full h-auto"
+                />
+              </div>
             </div>
 
-            <div className="md:grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-4 py-8 flex flex-col-reverse">
-              <Image
-                src="/Deformity/img4.jpeg"
-                width={500}
-                height={500}
-                alt="Dr. Bhupendra Pratap Bharti"
-                className="rounded-lg shadow-md w-full h-auto"
-              />
-              <div>
+            <div className="md:grid grid-cols-12 gap-6 items-center px-4 py-8 flex flex-col-reverse">
+              <div className='col-span-4'>
+                <Image
+                  src="/Deformity/img4.jpeg"
+                  width={500}
+                  height={500}
+                  alt="Dr. Bhupendra Pratap Bharti"
+                  className="rounded-lg shadow-md w-full h-96"
+                />
+              </div>
+              <div className='col-span-8'>
                 <h2 className="text-2xl font-bold text-primary mb-4">Surgical Outcome</h2>
                 <p className="mb-4">
                   The surgery was performed with high precision under intraoperative neuromonitoring to ensure spinal cord safety. Post-operatively, the patient:
@@ -210,7 +219,7 @@ const Deformity = () => {
               Expert Care Matters
             </h2>
             <p>
-              Dr. Bhupendra Pratap Bharti, Best Spine Surgeon in Delhi, is renowned for his expertise in managing complex spinal deformities with minimally invasive and precise surgical techniques. His patient-centric approach ensures every child or adolescent receives care tailored to their physical and emotional needs.
+              <span className='font-semibold'>  Dr. Bhupendra Pratap Bharti </span>, <span className='font-semibold'> <Link href="/contactus"> Best Spine Surgeon in Delhi </Link> </span>, is renowned for his expertise in managing complex spinal deformities with minimally invasive and precise surgical techniques. His patient-centric approach ensures every child or adolescent receives care tailored to their physical and emotional needs.
             </p>
           </div>
         </div>
