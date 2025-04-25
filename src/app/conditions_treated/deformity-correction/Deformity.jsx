@@ -34,51 +34,41 @@ const Deformity = () => {
               This is the story of a 17-year-old girl who battled congenital scoliosis caused by a hemivertebra at the L4 level, and how timely surgical intervention helped transform her life.
             </p>
 
-            <div className="md:grid md:grid-cols-12 gap-6 items-center px-4 py-8">
+            <div className='mt-10 text-center'>
+              <h2 className="text-2xl font-bold text-primary">
+                Patient Presentation
+              </h2>
 
-              <div className='col-span-8'>
-                <h2 className="text-2xl font-bold text-primary">
-                  Patient Presentation
-                </h2>
+              <p className="mb-4">
+                The young girl came to our clinic with complaints of:
+              </p>
+            </div>
 
-                <p className="mb-4">
-                  The young girl came to our clinic with complaints of:
-                </p>
-                <ol className="list-decimal list-inside space-y-4 mb-8">
 
-                  <div>
-                    <li className="text-blue-500 font-semibold text-lg">
-                      Osteoarthritis of the Spine
-                    </li>
-                    <ul className="list-disc list-inside space-y-2 pl-4 mt-2">
-                      <li>
-                        Persistent lower back pain that had been affecting her daily activities and concentration at school.
-                      </li>
-                      <li>
-                        A visible spinal deformity that was progressively becoming more prominent.
-                      </li>
-                      <li>
-                        Shoulder imbalance that not only affected her appearance but also her confidence in social settings.
-                      </li>
-                    </ul>
-                  </div>
-                </ol>
+            <div className="px-4 py-4">
+              <div className="max-w-6xl mx-auto grid md:grid-cols-12 gap-6 items-center">
+                <div className="col-span-6">
+                  <Image
+                    src="/Deformity/img5.jpeg"
+                    width={500}
+                    height={500}
+                    alt="Dr. Bhupendra Pratap Bharti"
+                    className="rounded-lg shadow-md w-full h-auto"
+                  />
+                </div>
 
-                <p>
-                  A detailed clinical evaluation and radiological investigations revealed a structural spinal deformity due to a hemivertebra at L4, a condition where only one side of the vertebral body is formed, causing the spine to curve abnormally.
-                </p>
-              </div>
-
-              <div className='col-span-4'>
-                <Image
-                  src={"/Deformity/img1.jpeg"}
-                  width={500}
-                  height={500}
-                  alt="Dr. Bhupendra Pratap Bharti"
-                  className="rounded-lg h-96 object-contain"
-                />
+                <div className="col-span-6">
+                  <Image
+                    src="/Deformity/img1.jpeg"
+                    width={500}
+                    height={500}
+                    alt="Dr. Bhupendra Pratap Bharti"
+                    className="rounded-lg h-96 object-contain w-full"
+                  />
+                </div>
               </div>
             </div>
+
 
             <div className="md:grid md:grid-cols-12 gap-6 items-center px-4 py-8 flex flex-col-reverse">
               <div className='col-span-4'>
@@ -176,7 +166,7 @@ const Deformity = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-4 py-8">
+            <div className="gap-6 items-center px-4 py-8">
               <div>
                 <h2 className="text-2xl font-bold text-primary mb-4">
                   Why Early Intervention Matters
@@ -204,14 +194,6 @@ const Deformity = () => {
                   Delaying surgery in such cases can lead to rigid deformities, nerve compression, and increased difficulty in surgical correction later.
                 </p>
               </div>
-
-              <Image
-                src="/Deformity/img5.jpeg"
-                width={500}
-                height={500}
-                alt="Dr. Bhupendra Pratap Bharti"
-                className="rounded-lg shadow-md w-full h-auto"
-              />
             </div>
 
 
