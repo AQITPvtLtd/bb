@@ -11,7 +11,7 @@ function Banner() {
       img: "/Banner/family.jpg",
       url: "/knowDoctor",
     },
-  ];
+  ];  
 
   return (
     <div>
