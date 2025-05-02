@@ -34,27 +34,27 @@ const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-    
+
         try {
             const formDataObj = new FormData();
             formDataObj.append("name", formData.name);
             formDataObj.append("Email", formData.Email);
             formDataObj.append("Phone", formData.Phone);
             formDataObj.append("Query", formData.Query);
-    
+
             if (formData.medicalReport) {
                 formDataObj.append("medicalReport", formData.medicalReport);
             }
-    
+
             const response = await form(formDataObj);
-    
+
             if (response.success) {
                 Swal.fire({
                     title: "Form Submitted Successfully!",
                     text: "Your query has been sent!",
                     icon: "success",
                 });
-    
+
                 setFormData({
                     name: "",
                     Email: "",
@@ -62,12 +62,12 @@ const Form = () => {
                     Query: "",
                     medicalReport: null,
                 });
-    
+
                 // File input reset
                 if (document.getElementById("medicalReportInput")) {
                     document.getElementById("medicalReportInput").value = "";
                 }
-    
+
                 router.push("/");
             } else {
                 Swal.fire({
@@ -86,15 +86,19 @@ const Form = () => {
         } finally {
             setLoading(false);
         }
-    };    
+    };
 
     return (
         <div>
+
             <form
-                className="bg-white text-gray-800 p-8 rounded-lg shadow-md w-full max-w-lg overflow-hidden"
+                className="bg-white text-gray-800 px-8 py-4 rounded-lg shadow-md w-full max-w-lg overflow-hidden"
                 onSubmit={handleSubmit}
                 encType="multipart/form-data"
             >
+                <h1 className="text-2xl font-bold text-primary text-center" style={{ fontFamily: "Roboto Slab, serif" }}>
+                    Submit Your Query
+                </h1>
                 <div className="mb-1">
                     <label htmlFor="name" className="block text-md font-medium mb-2">
                         Name
@@ -172,7 +176,7 @@ const Form = () => {
                     />
                 </div>
 
-                <div>
+                <div className="pt-2">
                     {loading ? (<div className="flex justify-center items-center w-full h-full bg-gray-500 bg-opacity-50 rounded-md fixed top-0 left-0 z-50">
                         <ClipLoader width="60" height="60" color="#07a496" className="animate-spin" />
                     </div>) : (<button

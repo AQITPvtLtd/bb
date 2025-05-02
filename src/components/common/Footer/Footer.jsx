@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 px-10">
         {/* Quick Links */}
         <div>
-          <h2 className="text-xl font-bold mb-6 border-b-2 border-white pb-2">
+          <h2 className="text-xl font-bold mb-6 border-b-2 border-white pb-2" style={{ fontFamily: "Roboto Slab, serif" }}>
             Quick Links
           </h2>
           <ul className="space-y-3">
@@ -45,7 +45,7 @@ const Footer = () => {
 
         {/* Specialty Services */}
         <div>
-          <h2 className="text-xl font-bold mb-6 border-b-2 border-white pb-2">
+          <h2 className="text-xl font-bold mb-6 border-b-2 border-white pb-2" style={{ fontFamily: "Roboto Slab, serif" }}>
             Specialty Services
           </h2>
           <ul className="space-y-3">
@@ -83,7 +83,7 @@ const Footer = () => {
 
         {/* Conditions Treated */}
         <div>
-          <h2 className="text-xl font-bold mb-6 border-b-2 border-white pb-2">
+          <h2 className="text-xl font-bold mb-6 border-b-2 border-white pb-2" style={{ fontFamily: "Roboto Slab, serif" }}>
             Conditions Treated
           </h2>
           <ul className="space-y-3">
@@ -124,7 +124,7 @@ const Footer = () => {
 
         {/* Contact Us */}
         <div>
-          <h2 className="text-xl font-bold mb-6 border-b-2 border-white pb-2">
+          <h2 className="text-xl font-bold mb-6 border-b-2 border-white pb-2" style={{ fontFamily: "Roboto Slab, serif" }}>
             Contact Us
           </h2>
           <h3 className="font-bold">Dr. Bhupendra Pratap Bharti</h3>

@@ -16,14 +16,14 @@ const DrBhupendra = () => {
           />
         </div>
         <div className="lg:col-span-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
+          <h1 className="text-4xl sm:text-3xl font-bold text-gray-800" style={{ fontFamily: "Roboto Slab, serif" }}>
             Dr. Bhupendra Pratap Bharti
           </h1>
-          <h3 className="text-lg sm:text-xl font-semibold text-primary mb-1">
+          <h3 className="text-2xl sm:text-xl font-semibold text-primary mb-1" style={{ fontFamily: "Roboto Slab, serif" }}>
             Consultant Orthopedic Spine Surgery
           </h3>
           <div className="mb-1">
-            <h4 className="text-lg font-semibold text-gray-700">
+            <h4 className="text-2xl font-semibold text-gray-700" style={{ fontFamily: "Roboto Slab, serif" }}>
               Qualification
             </h4>
             <p className="text-gray-600 mt-2 leading-relaxed lg:text-justify">
@@ -34,7 +34,7 @@ const DrBhupendra = () => {
             </p>
           </div>
           <div className="mb-1">
-            <h4 className="text-lg font-semibold text-gray-700">Experience</h4>
+            <h4 className="text-2xl font-semibold text-gray-700" style={{ fontFamily: "Roboto Slab, serif" }}>Experience</h4>
             <p className="text-gray-600 mt-2 leading-relaxed lg:text-justify">
               Associate director and unit head, Center for Orthopaedic Spine
               Surgery at MAX Super Speciality Hospital Patparganj, Delhi. Worked
@@ -44,7 +44,7 @@ const DrBhupendra = () => {
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold text-gray-700">
+            <h4 className="text-2xl font-semibold text-gray-700" style={{ fontFamily: "Roboto Slab, serif" }}>
               Specializes in:
             </h4>
             <p className="text-gray-600 mt-2 leading-relaxed lg:text-justify">

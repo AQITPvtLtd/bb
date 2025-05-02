@@ -40,16 +40,16 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-skyblue overflow-x-clip sm:p-16">
+    <div className="bg-skyblue overflow-x-clip px-10 mt-10">
       <div className="bg-skyblue">
-        <h1 className="font-extrabold text-2xl sm:text-3xl lg:pt-2 text-primary text-center">
+        <h1 className="font-extrabold text-4xl sm:text-3xl text-primary text-center" style={{ fontFamily: "Roboto Slab, serif" }}>
           Our Services include
         </h1>
-        <div className="mt-8 sm:mt-10">
+        <div className="mt-5">
           <Slider {...settings}>
             {servicesdata.map((s) => (
               <div key={s.id} className="px-4 sm:px-8 py-8 bg-[#07a496]">
-                <div className="bg-white h-[400px] sm:h-[430px] rounded-lg border shadow-lg">
+                <div className="bg-white h-[350px] sm:h-[380px] rounded-lg border shadow-lg">
                   <Image
                     width={1000}
                     height={1000}
@@ -57,13 +57,13 @@ const Services = () => {
                     src={`/Services/${s.image}`}
                     alt={s.name}
                   />
-                  <div className="p-6 sm:p-10">
+                  <div className="px-5 pt-3">
                     <h2 className="text-base sm:text-lg text-primary font-bold">
                       {s.name}
                     </h2>
                     <Link href={s.link}>
                       <button className="mt-4 text-white text-sm sm:text-lg font-bold bg-[#07a496] py-2 px-4 rounded-lg shadow-md transition duration-300 transform hover:scale-105 flex items-center">
-                        {s.button}{" "}
+                        {s.button}
                         <FaArrowRight className="ml-2 transition-transform duration-300 transform hover:translate-x-1" />
                       </button>
                     </Link>

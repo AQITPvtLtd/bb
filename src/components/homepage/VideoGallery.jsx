@@ -3,7 +3,7 @@ import React from "react";
 const VideoGallery = () => {
   return (
     <div className="bg-gray-100 flex flex-col items-center py-10 mt-5">
-      <h1 className="text-center text-4xl font-bold text-[#07a496] mb-10">
+      <h1 className="text-center text-4xl font-bold text-[#07a496] mb-10" style={{ fontFamily: "Roboto Slab, serif" }}>
         Video Gallery
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-10">

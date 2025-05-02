@@ -27,7 +27,7 @@ const Blog = () => {
   return (
     <div>
       <div className="mt-10">
-        <h1 className="text-[#07a496] text-center lg:text-5xl md:text-2xl pt-7 font-bold">
+        <h1 className="text-[#07a496] text-center lg:text-5xl text-4xl lg:pt-7 font-bold" style={{ fontFamily: "Roboto Slab, serif" }}>
           Our Blogs
         </h1>
         {error ? (

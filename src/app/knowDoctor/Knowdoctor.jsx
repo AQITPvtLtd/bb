@@ -21,76 +21,67 @@ const Knowdoctor = () => {
           alt="Contact Image"
         />
         <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
-        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center" style={{ fontFamily: "Roboto Slab, serif" }}>
           About Us
         </h1>
       </div>
 
       {/* Add an overlay for better readability */}
-      <div className="container mx-auto mt-16 px-4">
+      <div className="container mx-auto px-4 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl mb-5">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 p-8 rounded-lg">
-          <div className="w-full lg:w-1/2">
-            <h1 className="text-3xl font-bold underline underline-offset-4 decoration-[#07a496] ">
-              Dr. Bhupendra Pratap Bharti
+
+          {/* Text Section */}
+          <div className="w-full lg:w-1/2 space-y-4">
+            <h1 className="text-4xl font-bold underline underline-offset-4 decoration-[#07a496] text-gray-800" style={{ fontFamily: "Roboto Slab, serif" }}>
+              <span className="bg-gradient-to-r from-[#07a496] to-[#00c3c3] bg-clip-text text-transparent">Dr. Bhupendra Pratap Bharti</span>
             </h1>
-            <p className="text-xl mt-2 font-semibold">Associate Director</p>
-            <p className="text-xl font-semibold">Orthopedic Spine Surgery</p>
-            <p className="text-xl font-semibold">
+            <p className="text-xl font-semibold text-gray-700" style={{ fontFamily: "Roboto Slab, serif" }}>Associate Director</p>
+            <p className="text-xl font-semibold text-gray-700" style={{ fontFamily: "Roboto Slab, serif" }}>Orthopedic Spine Surgery</p>
+            <p className="text-xl font-semibold text-gray-700" style={{ fontFamily: "Roboto Slab, serif" }}>
               MAX Super Speciality Hospital, Patparganj, New Delhi.
             </p>
-
-            <p className="text-xl font-semibold">
-              H 38, near Diamond Crown Banquet Hall, Sector 51, Noida, Uttar
-              Pradesh 201307
+            <p className="text-xl font-semibold text-gray-700" style={{ fontFamily: "Roboto Slab, serif" }}>
+              H 38, near Diamond Crown Banquet Hall, Sector 51, Noida, Uttar Pradesh 201307
             </p>
 
-            <h2 className="mt-8 text-2xl font-semibold underline underline-offset-4 decoration-[#07a496]">
-              Qualification
-            </h2>
-
-            <ul className="list-disc pl-6 text-lg mt-4 space-y-2">
-              <li className="font-semibold">MBBS</li>
-              <li className="font-semibold">MS (Orthopaedic)</li>
-              <li className="font-semibold">
-                Spine Fellowship - Indian Spinal Injuries Centre, India
-              </li>
-              <li className="font-semibold">
-                Fellowship Anterior Spine Surgery - Hongkong
-              </li>
-              <li className="font-semibold">
-                AO Spine Inland Fellowship - Park Clinic, India
-              </li>
-              <li className="font-semibold">
-                Endoscopy UBE Fellowship - Busan, South Korea
-              </li>
+            <h2 className="mt-8 text-2xl font-semibold text-gray-800" style={{ fontFamily: "Roboto Slab, serif" }}>Qualification</h2>
+            <ul className="list-disc pl-6 text-lg mt-2 space-y-2 text-gray-700">
+              <li className="font-medium">MBBS</li>
+              <li className="font-medium">MS (Orthopaedic)</li>
+              <li className="font-medium">Spine Fellowship - Indian Spinal Injuries Centre, India</li>
+              <li className="font-medium">Fellowship Anterior Spine Surgery - Hongkong</li>
+              <li className="font-medium">AO Spine Inland Fellowship - Park Clinic, India</li>
+              <li className="font-medium">Endoscopy UBE Fellowship - Busan, South Korea</li>
             </ul>
           </div>
 
+          {/* Image Section */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="bg-[#07a496] rounded-3xl shadow-2xl">
+            <div className="relative bg-[#07a496] rounded-3xl shadow-2xl hover:scale-105 transition duration-300 ease-in-out">
               <Image
                 src="/drBhupendra/newimg.png"
                 width={500}
                 height={500}
                 alt="Dr. Bhupendra Pratap Bharti"
-                className="rounded-lg object-cover -translate-x-5"
+                className="rounded-2xl object-cover"
               />
+            
             </div>
           </div>
         </div>
       </div>
 
-      <div className="lg:grid lg:grid-cols-12 gap-6 bg-cyan-500 py-10 px-5">
+      <div className="lg:grid lg:grid-cols-12 justify-evenly gap-6 bg-cyan-500 py-10 px-10">
         {/* Mission Section */}
-        <div className="col-start-2 col-span-5 flex flex-col items-center text-center">
+        <div className="col-span-5 flex flex-col items-center text-center">
           <Image
             src="/About/mission.png"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
             alt="Our Mission"
-            className="rounded-lg object-cover mb-4"
+            className="object-cover mb-4 border-2 border-white rounded-full p-6 shadow-2xl bg-cyan-400"
           />
-          <h2 className="text-2xl font-semibold mb-4 text-white">Our Mission</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white" style={{ fontFamily: "Roboto Slab, serif" }}>Our Mission</h2>
           <p className="text-gray-100 max-w-lg">
             Our mission is to provide world-class orthopedic and spine care by
             utilizing the latest advancements in minimally invasive techniques and
@@ -101,20 +92,20 @@ const Knowdoctor = () => {
         </div>
 
         {/* White Divider Line */}
-        <div className="col-span-1 flex justify-center">
+        <div className="col-span-2 flex justify-center">
           <div className="h-full w-[2px] bg-white"></div>
         </div>
 
         {/* Vision Section */}
-        <div className="col-span-5 flex flex-col items-center text-center">
+        <div className="col-span-5 flex flex-col items-center text-center mt-10">
           <Image
             src="/About/vision.png"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
             alt="Our Vision"
-            className="rounded-lg object-cover mb-4"
+            className="object-cover mb-4 border-2 border-white rounded-full p-6 shadow-2xl bg-cyan-400"
           />
-          <h2 className="text-2xl font-semibold mb-4 text-white">Our Vision</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white" style={{ fontFamily: "Roboto Slab, serif" }}>Our Vision</h2>
           <p className="text-gray-100 max-w-lg">
             Our vision is to be a leading center for excellence in orthopedic and
             spine surgery, recognized for our expertise, innovation, and
@@ -126,16 +117,16 @@ const Knowdoctor = () => {
         </div>
       </div>
 
-      <h1 className="lg:text-5xl font-semibold md:text-3xl text-2xl px-20 lg:py-10 py-5">
-        Frequently <br className="lg:block hidden" /> asked questions
+      <h1 className="lg:text-5xl font-semibold md:text-3xl text-3xl px-20 lg:py-10 py-5 text-center" style={{ fontFamily: "Roboto Slab, serif" }}>
+        Frequently Asked Questions
       </h1>
-      <div id="accordion-collapse" className="lg:px-20 px-14 gap-20">
+      <div id="accordion-collapse" className="lg:px-20 md:px-14 px-6 gap-20">
         {/* First Accordion Item */}
-        <div className="border border-black mb-4">
+        <div className="border border-black mb-4 rounded-2xl">
           <h2 id="accordion-collapse-heading-1">
             <button
               type="button"
-              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black border-t-0 gap-3"
+              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black rounded-2xl border-t-0 gap-3"
               onClick={() => toggleAccordion(1)}
               aria-expanded={activeIndex === 1}
               aria-controls="accordion-collapse-body-1"
@@ -161,11 +152,11 @@ const Knowdoctor = () => {
         </div>
 
         {/* Second Accordion Item */}
-        <div className="border border-black mb-4">
+        <div className="border border-black mb-4 rounded-2xl">
           <h2 id="accordion-collapse-heading-2">
             <button
               type="button"
-              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black border-t-0 gap-3"
+              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black rounded-2xl border-t-0 gap-3"
               onClick={() => toggleAccordion(2)}
               aria-expanded={activeIndex === 2}
               aria-controls="accordion-collapse-body-2"
@@ -194,11 +185,11 @@ const Knowdoctor = () => {
         </div>
 
         {/* Third Accordion Item */}
-        <div className="border border-black mb-4">
+        <div className="border border-black mb-4 rounded-2xl">
           <h2 id="accordion-collapse-heading-3">
             <button
               type="button"
-              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black border-t-0 gap-3"
+              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black rounded-2xl border-t-0 gap-3"
               onClick={() => toggleAccordion(3)}
               aria-expanded={activeIndex === 3}
               aria-controls="accordion-collapse-body-3"
@@ -229,11 +220,11 @@ const Knowdoctor = () => {
         </div>
 
         {/* Forth Accordion Item */}
-        <div className="border border-black mb-4">
+        <div className="border border-black mb-4 rounded-2xl">
           <h2 id="accordion-collapse-heading-4">
             <button
               type="button"
-              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black border-t-0 gap-3"
+              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black rounded-2xl border-t-0 gap-3"
               onClick={() => toggleAccordion(4)}
               aria-expanded={activeIndex === 4}
               aria-controls="accordion-collapse-body-4"
@@ -260,11 +251,11 @@ const Knowdoctor = () => {
         </div>
 
         {/* Fifth Accordion Item */}
-        <div className="border border-black mb-4">
+        <div className="border border-black mb-4 rounded-2xl">
           <h2 id="accordion-collapse-heading-5">
             <button
               type="button"
-              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black border-t-0 gap-3"
+              className="flex items-center justify-between w-full px-5 py-2 font-medium rtl:text-right border-b border-black rounded-2xl border-t-0 gap-3"
               onClick={() => toggleAccordion(5)}
               aria-expanded={activeIndex === 5}
               aria-controls="accordion-collapse-body-5"

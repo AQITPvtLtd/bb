@@ -3,8 +3,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Conditions } from "../data/conditions";
 import Image from "next/image";
-// import { useScrollDirection } from "../hooks/useScrollDirection"; // <-- path adjust karo
-import { useScrollDirection } from "@/hooks/useScrollDirection";
+
 const container = {
   hidden: { opacity: 0 },
   visible: {
@@ -22,11 +21,7 @@ const item = {
 
 const ConditionsTreated = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
-  const scrollDirection = useScrollDirection();
-
-  const displayedConditions =
-    scrollDirection === "up" ? [...Conditions].reverse() : Conditions;
+  const isInView = useInView(ref, { once: true });
 
   return (
     <div className="relative p-6 rounded-lg shadow-md mt-10">
@@ -40,7 +35,7 @@ const ConditionsTreated = () => {
         />
       </div>
       <div className="relative z-10">
-        <h2 className="text-4xl text-[#07a496] font-bold text-center mb-6 animate__animated animate__heartBeat">
+        <h2 className="text-4xl text-[#07a496] font-bold text-center mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>
           Conditions Treated
         </h2>
         <motion.div
@@ -50,7 +45,7 @@ const ConditionsTreated = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {displayedConditions.map((s) => (
+          {Conditions.map((s) => (
             <motion.div
               key={s.id}
               className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
