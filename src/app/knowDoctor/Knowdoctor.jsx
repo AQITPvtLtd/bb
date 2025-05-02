@@ -97,7 +97,7 @@ const Knowdoctor = () => {
         </div>
 
         {/* Vision Section */}
-        <div className="col-span-5 flex flex-col items-center text-center mt-10">
+        <div className="col-span-5 flex flex-col items-center text-center mt-10 lg:mt-0">
           <Image
             src="/About/vision.png"
             width={200}
