@@ -179,7 +179,7 @@ const Footer = () => {
       </div>
 
       <h1 className="text-center mt-6">
-        <Link href="https://tekbooster.com/" target="__blank">Design & Develop by TekBooster (Digital Marketing Company)</Link>
+        <Link href="https://tekbooster.com/" target="__blank">Design & Develop by Tek Booster (Digital Marketing Company)</Link>
       </h1>
     </footer>
   );
