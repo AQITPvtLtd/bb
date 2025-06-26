@@ -234,11 +234,9 @@ const Header = () => {
                                   onClick={handleCloseNavbar}
                                   href={submenuItem.path}
                                   key={index}
-                                  className={`block rounded py-2 text-sm hover:bg-primary lg:px-3`}
+                                  className={`block rounded py-2 text-sm hover:bg-primary lg:px-3 hover:text-white text-black`}
                                 >
-                                  <div className="text-black hover:text-white">
-                                    {submenuItem.title}
-                                  </div>
+                                  {submenuItem.title}
                                 </Link>
                               ) : (
                                 <>
