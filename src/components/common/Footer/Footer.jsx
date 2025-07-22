@@ -51,20 +51,20 @@ const Footer = () => {
           <ul className="space-y-3">
             {[
               {
-                href: "/special_service/minimally",
+                href: "/special-services/minimally",
                 label: "Minimally Invasive Spine Surgery",
               },
               {
-                href: "/special_service/artificial",
+                href: "/special-services/artificial",
                 label: "Artificial Disc Replacement",
               },
               {
-                href: "/special_service/spineDeformity",
+                href: "/special-services/spineDeformity",
                 label: "Spine Deformity Correction",
               },
-              { href: "/special_service/spinal", label: "Spinal Tumors" },
+              { href: "/special-services/spinal", label: "Spinal Tumors" },
               {
-                href: "/special_service/traumatic",
+                href: "/special-services/traumatic",
                 label: "Traumatic Conditions of Spine",
               },
             ].map((item, index) => (
@@ -89,23 +89,23 @@ const Footer = () => {
           <ul className="space-y-3">
             {[
               {
-                href: "/conditions_treated/degenerative",
+                href: "/conditions-treated/degenerative",
                 label: "Degenerative Spine Conditions",
               },
               {
-                href: "/conditions_treated/spinalCanal",
+                href: "/conditions-treated/spinalCanal",
                 label: "Spinal Canal Stenosis Decompression",
               },
               {
-                href: "/conditions_treated/spondylolisthesis",
+                href: "/conditions-treated/spondylolisthesis",
                 label: "Spondylolisthesis",
               },
               {
-                href: "/conditions_treated/adult",
+                href: "/conditions-treated/adult",
                 label: "Adult Degenerative Deformities",
               },
               {
-                href: "/conditions_treated/spinal",
+                href: "/conditions-treated/spinal",
                 label: "Spinal Fusion Surgery",
               },
             ].map((item, index) => (

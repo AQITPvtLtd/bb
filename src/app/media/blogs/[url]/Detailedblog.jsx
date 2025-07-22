@@ -39,10 +39,7 @@ const DetailedBlog = ({ id }) => {
     <div className="px-4 sm:px-6 lg:px-8">
       <div className="lg:grid grid-cols-12 gap-10 justify-between">
         <div className="col-start-1 col-span-9">
-          {/* <h1 className="text-4xl font-bold text-center my-10">
-            {obj?.heading}
-          </h1> */}
-
+         
           <div className="flex justify-center mt-8">
             <Image
               src={`/Blog/${obj?.img}`}
@@ -67,7 +64,7 @@ const DetailedBlog = ({ id }) => {
 
           <div className="prose prose-lg lg:mx-16 bg-gray-100 p-3 lg:p-10 rounded-lg">
             <p
-              className="text-gray-700"
+              className="text-gray-700 lg:text-justify"
               dangerouslySetInnerHTML={{ __html: obj?.content }}
             ></p>
           </div>

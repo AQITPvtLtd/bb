@@ -47,7 +47,7 @@ const Blog = () => {
                   width={1000}
                 />
                 <div className="px-4 py-4">
-                  <h2 className="text-xl font-semibold mb-2">{n.heading}</h2>
+                  <h2 className="text-lg font-semibold mb-2">{n.heading}</h2>
                   <div className="flex gap-3">
                     <SlCalender />
                     <p className="text-gray-800 text-sm mb-4">
@@ -55,7 +55,7 @@ const Blog = () => {
                     </p>
                   </div>
                   <p
-                    className="text-gray-700 line-clamp-3"
+                    className="text-gray-700 line-clamp-3 text-sm"
                     dangerouslySetInnerHTML={{ __html: n.shortcontent }}
                   ></p>
                   <Link

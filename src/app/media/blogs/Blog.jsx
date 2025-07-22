@@ -32,12 +32,12 @@ const Blog = () => {
           src="/Blog/background.png"
           width={1000}
           height={1000}
-          className="w-full h-[250px] object-cover"
+          className="w-full h-[200px] object-cover"
           alt="Contact Image"
         />
         <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
-        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
-          Blogs
+        <h1 className="text-white font-serif text-center text-4xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+          Read our latest blogs
         </h1>
       </div>
 
@@ -58,7 +58,7 @@ const Blog = () => {
                 width={1000}
               />
               <div className="px-4 py-4">
-                <h2 className="text-xl font-semibold mb-2">{n.heading}</h2>
+                <h2 className="text-lg font-semibold mb-2">{n.heading}</h2>
                 <div className="flex gap-3">
                   <SlCalender />
                   <p className="text-gray-800 text-sm mb-4">
@@ -66,7 +66,7 @@ const Blog = () => {
                   </p>
                 </div>
                 <p
-                  className="text-gray-700 line-clamp-3"
+                  className="text-gray-700 line-clamp-3 text-sm"
                   dangerouslySetInnerHTML={{ __html: n.shortcontent }}
                 ></p>
                 <Link href={`/media/blogs/${n.url}`} className="flex mb-3 py-4">
