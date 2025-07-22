@@ -17,7 +17,7 @@ const Knowdoctor = () => {
           src="/knowdoctor/about.jpg"
           width={1000}
           height={1000}
-          className="w-full h-[250px] object-cover"
+          className="w-full h-[200px] object-cover"
           alt="Contact Image"
         />
         <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
@@ -32,7 +32,7 @@ const Knowdoctor = () => {
 
           {/* Text Section */}
           <div className="w-full lg:w-1/2 space-y-4">
-            <h1 className="text-4xl font-bold underline underline-offset-4 decoration-[#07a496] text-gray-800" style={{ fontFamily: "Roboto Slab, serif" }}>
+            <h1 className="lg:text-4xl text-2xl font-bold underline underline-offset-4 decoration-[#07a496] text-gray-800" style={{ fontFamily: "Roboto Slab, serif" }}>
               <span className="bg-gradient-to-r from-[#07a496] to-[#00c3c3] bg-clip-text text-transparent">Dr. Bhupendra Pratap Bharti</span>
             </h1>
             <p className="text-xl font-semibold text-gray-700" style={{ fontFamily: "Roboto Slab, serif" }}>Associate Director</p>
@@ -65,7 +65,6 @@ const Knowdoctor = () => {
                 alt="Dr. Bhupendra Pratap Bharti"
                 className="rounded-2xl object-cover"
               />
-            
             </div>
           </div>
         </div>

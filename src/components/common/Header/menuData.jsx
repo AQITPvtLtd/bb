@@ -84,146 +84,144 @@ const menuData = [
         path: "/conditions-treated/deformity-correction",
       }, {
         id: 42,
-        title: "Degenerative Spine Conditions",
+        title: "Spinal Deformities",
         newTab: false,
-        path: "/conditions-treated/degenerative",
-      },
-      {
+        path: "/conditions-treated/spinalDeformities",
+      }, {
         id: 43,
         title: "Spondylolisthesis",
         newTab: false,
         path: "/conditions-treated/spondylolisthesis",
-      },
-      {
+      }, {
         id: 44,
-        title: "Spinal Fusion Surgery",
-        newTab: false,
-        path: "/conditions-treated/spinal",
-      },
-      {
-        id: 45,
-        title: "Spinal Deformities",
-        newTab: false,
-        path: "/conditions-treated/spinalDeformities",
-      },
-      {
-        id: 46,
-        title: "Post Infectious Spine Deformities Correction",
-        newTab: false,
-        path: "/conditions-treated/postInfectious",
-      },
-      {
-        id: 47,
         title: "Spine Tumors",
         newTab: false,
         path: "/conditions-treated/spineTumors",
       },
       {
-        id: 48,
+        id: 45,
         title: "Pain Procedure",
         newTab: false,
         path: "/conditions-treated/painProcedure",
-      },
-      {
-        id: 49,
-        title: "Pediatric Congenital Spine Deformities",
-        newTab: false,
-        path: "/conditions-treated/pediatric",
-      },
-      {
-        id: 411,
+      }, {
+        id: 46,
         title: "Vertebroplasty",
         newTab: false,
         path: "/conditions-treated/vertebroplasty",
       },
       {
-        id: 412,
+        id: 47,
         title: "Facet Joint",
         newTab: false,
         path: "/conditions-treated/facetJoint",
-      },
-      {
-        id: 113,
-        title: "Selective Cervical Nerve Root Blockade (SCNRB)",
-        newTab: false,
-        path: "/conditions-treated/selective",
-      },
-      {
-        id: 414,
+      }, {
+        id: 48,
         title: "Spine Endoscopy",
         newTab: false,
         path: "/conditions-treated/spineEndoscopy",
-      },
-      {
-        id: 415,
-        title: "Spinal Canal Stenosis Decompression",
-        newTab: false,
-        path: "/conditions-treated/spinalCanal",
-      },
-      {
-        id: 416,
-        title: "Adult Degenerative Deformities",
-        newTab: false,
-        path: "/conditions-treated/adult",
-      },
-      {
-        id: 417,
+      }, {
+        id: 49,
         title: "Discectomy",
         newTab: false,
         path: "/conditions-treated/discectomy",
       },
       {
-        id: 418,
+        id: 411,
         title: "Kyphoscoliosis",
         newTab: false,
         path: "/conditions-treated/kyphoscoliosis",
       },
       {
-        id: 419,
+        id: 412,
         title: "Spinal Infections",
         newTab: false,
         path: "/conditions-treated/spinalInfections",
       },
       {
-        id: 420,
+        id: 413,
         title: "Spine Trauma",
         newTab: false,
         path: "/conditions-treated/spinalInfections",
-      },
-
-      {
-        id: 421,
-        title: "Craniovertebral Junction Stabilization Surgery",
-        newTab: false,
-        path: "/conditions-treated/craniovertebral",
-      },
-      {
-        id: 422,
+      }, {
+        id: 414,
         title: "Kyphoplasty",
         newTab: false,
         path: "/conditions-treated/kyphoplasty",
       },
-
       {
-        id: 423,
+        id: 415,
         title: "RF Ablation of Disc",
         newTab: false,
         path: "/conditions-treated/rf",
       },
+
+      {
+        id: 416,
+        title: "Spinal Fusion Surgery",
+        newTab: false,
+        path: "/conditions-treated/spinal",
+      },
+
+      {
+        id: 417,
+        title: "Post Infectious Spine Deformities Correction",
+        newTab: false,
+        path: "/conditions-treated/postInfectious",
+      },
+
+      {
+        id: 418,
+        title: "Pediatric Congenital Spine Deformities",
+        newTab: false,
+        path: "/conditions-treated/pediatric",
+      },
+
+      {
+        id: 419,
+        title: "Selective Cervical Nerve Root Blockade (SCNRB)",
+        newTab: false,
+        path: "/conditions-treated/selective",
+      },
+
+      {
+        id: 421,
+        title: "Spinal Canal Stenosis Decompression",
+        newTab: false,
+        path: "/conditions-treated/spinalCanal",
+      },
+      {
+        id: 422,
+        title: "Adult Degenerative Deformities",
+        newTab: false,
+        path: "/conditions-treated/adult",
+      },
+      {
+        id: 423,
+        title: "Craniovertebral Junction Stabilization Surgery",
+        newTab: false,
+        path: "/conditions-treated/craniovertebral",
+      },
+
       {
         id: 424,
+        title: "Degenerative Spine Conditions",
+        newTab: false,
+        path: "/conditions-treated/degenerative",
+      },
+      {
+        id: 425,
         title: "Selective Nerve Root Block (SNRB)",
         newTab: false,
         path: "/conditions-treated/selectiveNerve",
       },
       {
-        id: 425,
+        id: 426,
         title: "Lumbar Sympathetic Block",
         newTab: false,
         path: "/conditions-treated/lumbar",
       },
       {
-        id: 426,
+        id: 427,
         title: "Periportal Tube & Uniportal",
         newTab: false,
         path: "/conditions-treated/periportal",

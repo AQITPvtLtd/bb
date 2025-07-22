@@ -26,7 +26,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="">
+    <div>
       <div className="relative">
         <Image
           src="/Blog/background.png"

@@ -24,13 +24,12 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="lg:mt-8 mt-3 px-4 sm:px-6 lg:px-8 p-6 border-2 rounded-2xl h-screen">
-        <ul className="h-screen">
-          <div className="">
-            <p className="text-[#07a496] font-semibold text-2xl py-2 ">
+      <div className="lg:mt-8 mt-3 px-4 sm:px-6 p-6 border-2 rounded-2xl h-fit">
+        <ul>
+          
+            <p className="text-[#07a496] font-semibold text-xl py-1 ">
               More Blogs
             </p>
-          </div>
 
           <table>
             <tbody>
@@ -47,7 +46,7 @@ const Sidebar = () => {
                   <td>
                     <Link href={`/media/blogs/${n.url}`}>
                       <div className="flex gap-1 items-center hover:text-[#07a496]">
-                        <h2 className="text-lg font-medium">{n.heading}</h2>
+                        <h2 className="text-sm font-medium">{n.heading}</h2>
                       </div>
                     </Link>
                   </td>
