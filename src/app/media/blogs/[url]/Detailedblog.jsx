@@ -8,8 +8,6 @@ import { FaUser } from "react-icons/fa";
 import Moment from "react-moment";
 import Head from "next/head";
 
-
-
 const DetailedBlog = ({ id }) => {
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(null);
