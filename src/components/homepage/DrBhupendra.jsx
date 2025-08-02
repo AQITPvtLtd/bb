@@ -55,7 +55,7 @@ const DrBhupendra = () => {
           </div>
           <div className="mt-5">
             <Link
-              href="/knowDoctor"
+              href="/know-your-doctor"
               className="px-4 py-3 bg-[#07a496] text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1"
             >
               Read More

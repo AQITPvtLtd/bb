@@ -8,7 +8,7 @@ function Banner() {
     {
       name: `We Can Help You Get Better Regain Your Health`,
       img: "/Banner/family.jpg",
-      url: "/knowDoctor",
+      url: "/know-your-doctor",
     },
   ];
 
@@ -39,7 +39,7 @@ function Banner() {
                         Learn More
                       </button>
                     </Link>
-                    <Link href="/contactus">
+                    <Link href="/contact-us">
                       <button className="px-4 py-2 text-xl bg-[#07a496] text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition" style={{ fontFamily: "Roboto Slab, serif" }}>
                         Contact Us
                       </button>
