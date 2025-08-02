@@ -107,7 +107,7 @@ const menuData = [
         id: 46,
         title: "Vertebroplasty",
         newTab: false,
-        path: "/conditions-treated/vertebroplastys",
+        path: "/conditions-treated/vertebroplasty",
       },
       {
         id: 47,
