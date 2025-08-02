@@ -2,8 +2,7 @@
 import "animate.css";
 import Image from "next/image";
 import Link from "next/link";
-import Form from "@/app/contactus/Form";
-
+import Form from "@/app/contact-us/Form";
 function Banner() {
   const data = [
     {
@@ -11,7 +10,7 @@ function Banner() {
       img: "/Banner/family.jpg",
       url: "/knowDoctor",
     },
-  ];  
+  ];
 
   return (
     <div>
