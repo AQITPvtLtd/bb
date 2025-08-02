@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Deformity = () => {
   return (
     <div>
-      <div className="">
+      <div>
         <div className="space-y-8">
           <div className="relative">
             <Image
@@ -94,7 +94,6 @@ const Deformity = () => {
             </div>
 
             <div className="md:grid md:grid-cols-12 gap-6 items-center px-4 py-8">
-
               <div className='col-span-8'>
                 <h2 className="text-2xl font-bold text-primary mb-4">
                   Surgical Plan: Hemivertebra Resection with Short-Segment Fixation
