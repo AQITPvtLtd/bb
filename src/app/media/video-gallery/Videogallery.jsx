@@ -21,8 +21,8 @@ const Videogallery = () => {
     fetchVideos();
   }, []);
   return (
-    <div className="bg-gray-100 flex flex-col items-center">
-      <h1 className="text-center text-4xl font-bold text-gray-800 mb-10 lg:pt-10">
+    <div className="flex flex-col items-center pb-10">
+      <h1 className="text-center text-4xl font-bold text-gray-800 pb-10 pt-10"  style={{ fontFamily: "Roboto Slab, serif" }}>
         Video Gallery
       </h1> 
       {error ? (
@@ -34,11 +34,11 @@ const Videogallery = () => {
               <iframe
                 width="560"
                 height="315"
+                className="rounded-2xl"
                 src={v.src}
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                // referrerpolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
             </div>

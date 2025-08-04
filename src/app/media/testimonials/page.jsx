@@ -25,7 +25,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div className='bg-gray-100'>
       <Testimonials />
     </div>
   )

@@ -27,24 +27,15 @@ const Blog = () => {
 
   return (
     <div>
-      <div className="relative">
-        <Image
-          src="/Blog/background.png"
-          width={1000}
-          height={1000}
-          className="w-full h-[200px] object-cover"
-          alt="Contact Image"
-        />
-        <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
-        <h1 className="text-white font-serif text-center text-4xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
-          Read our latest blogs
-        </h1>
-      </div>
+
+      <h1 className="text-center text-4xl font-bold text-gray-800 pb-10 pt-10" style={{ fontFamily: "Roboto Slab, serif" }}>
+        Read our latest blogs
+      </h1>
 
       {error ? (
         <p className="text-red-500 text-center mt-6">{error}</p>
       ) : (
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4 sm:px-6 lg:px-8">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8">
           {blogs.map((n) => (
             <li
               key={n.id}

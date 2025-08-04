@@ -14,7 +14,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="py-5 bg-gradient-to-r from-teal-500 to-cyan-600 text-white mt-10">
+    <footer className="py-5 bg-gradient-to-r from-teal-500 to-cyan-600 text-white">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 px-10">
         {/* Quick Links */}
         <div>

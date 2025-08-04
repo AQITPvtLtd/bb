@@ -15,7 +15,7 @@ const Photogallery = () => {
     <div className="px-4">
       {/* <h2 className="text-center text-4xl font-bold mb-8">Photo Gallery</h2> */}
 
-      <div className="relative">
+      {/* <div className="relative">
         <Image
           src="/PhotoGallery/photo.jpg"
           width={1000}
@@ -24,11 +24,19 @@ const Photogallery = () => {
           alt="Contact Image"
         />
         <div className="absolute inset-0 bg-[#07a496] opacity-70 z-10"></div>
-        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center" 
+        style={{ fontFamily: "Roboto Slab, serif" }}
+        >
           Photo Gallery
         </h1>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+      </div> */}
+
+      <h1 className="text-center text-4xl font-bold text-gray-800 pb-10 pt-10" style={{ fontFamily: "Roboto Slab, serif" }}>
+        Photo Gallery
+      </h1>
+
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-10 lg:px-12">
         {photos.map((photo, index) => (
           <div key={index} className="relative group overflow-hidden">
             <div className="flex items-center justify-center">

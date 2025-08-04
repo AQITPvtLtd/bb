@@ -11,13 +11,13 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 const Services = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     nextArrow: <GrNext color="black" />,
     prevArrow: <GrPrevious color="black" />,
     responsive: [
@@ -40,40 +40,45 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-skyblue overflow-x-clip px-10 mt-10">
-      <div className="bg-skyblue">
-        <h1 className="font-extrabold text-4xl sm:text-3xl text-primary text-center" style={{ fontFamily: "Roboto Slab, serif" }}>
-          Our Services include
-        </h1>
-        <div className="mt-5">
-          <Slider {...settings}>
-            {servicesdata.map((s) => (
-              <div key={s.id} className="px-4 sm:px-8 py-8 bg-[#07a496]">
-                <div className="bg-white h-[350px] sm:h-[380px] rounded-lg border shadow-lg">
-                  <Image
-                    width={1000}
-                    height={1000}
-                    className="w-full h-[200px] sm:h-[250px] object-cover rounded-t-lg"
-                    src={`/Services/${s.image}`}
-                    alt={s.name}
-                  />
-                  <div className="px-5 pt-3">
-                    <h2 className="text-base sm:text-lg text-primary font-bold">
-                      {s.name}
-                    </h2>
-                    <Link href={s.link}>
-                      <button className="mt-4 text-white text-sm sm:text-lg font-bold bg-[#07a496] py-2 px-4 rounded-lg shadow-md transition duration-300 transform hover:scale-105 flex items-center">
-                        {s.button}
-                        <FaArrowRight className="ml-2 transition-transform duration-300 transform hover:translate-x-1" />
-                      </button>
-                    </Link>
-                  </div>
+    <div className="bg-[#e0f7f5] px-4 sm:px-8 md:px-20 py-10 overflow-hidden">
+      <h1
+        className="text-center text-3xl sm:text-4xl font-extrabold text-primary mb-8"
+        style={{ fontFamily: "Roboto Slab, serif" }}
+      >
+        Our Services include
+      </h1>
+
+      <Slider {...settings}>
+        {servicesdata.map((s) => (
+          <div key={s.id} className="px-4 py-4">
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col justify-between overflow-hidden">
+              <Image
+                src={`/Services/${s.image}`}
+                width={500}
+                height={300}
+                alt={s.name}
+                className="w-full h-[260px] object-fill rounded-t-xl"
+              />
+              <div className="p-5 flex flex-col flex-grow">
+                <h2
+                  className="text-lg font-semibold text-[#055a53] mb-4"
+                  style={{ fontFamily: "Roboto Slab, serif" }}
+                >
+                  {s.name}
+                </h2>
+                <div className="mt-auto">
+                  <Link href={s.link}>
+                    <button className="bg-[#07a496] hover:bg-[#06857c] text-white font-semibold px-5 py-2 rounded-lg shadow-md text-sm sm:text-base flex items-center transition-transform duration-300 hover:translate-x-1">
+                      {s.button}
+                      <FaArrowRight className="ml-2" />
+                    </button>
+                  </Link>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };

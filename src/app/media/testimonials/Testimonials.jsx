@@ -22,7 +22,8 @@ const Testimonials = () => {
   }, []);
   return (
     <div className="bg-gray-100 flex flex-col items-center lg:pb-10 pb-5">
-      <h1 className="text-center text-4xl font-bold text-gray-800 mb-10 lg:pt-10">
+
+      <h1 className="text-center text-4xl font-bold text-gray-800 pb-10 pt-10" style={{ fontFamily: "Roboto Slab, serif" }}>
         Testimonials
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-10">

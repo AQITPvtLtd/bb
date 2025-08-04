@@ -1,65 +1,48 @@
 "use client";
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import { Conditions } from "../data/conditions";
 import Image from "next/image";
-
-const container = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
+import { Conditions } from "../data/conditions";
+import Link from "next/link";
 
 const ConditionsTreated = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   return (
-    <div className="relative p-6 rounded-lg shadow-md mt-10">
-      <div className="absolute inset-0">
+    <div className="relative px-4 py-12 sm:px-8 md:px-16 lg:px-20 xl:px-28 mt-10">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
         <Image
           src="/Services/backgorundImg.jpg"
           alt="Background"
-          height={500}
-          width={1000}
+          fill
           className="w-full h-full object-cover"
         />
+        {/* Black Gradient Overlay */}
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div> */}
       </div>
-      <div className="relative z-10">
-        <h2 className="text-4xl text-[#07a496] font-bold text-center mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <h2
+          className="text-4xl text-center font-bold text-[#07a496] mb-10"
+          style={{ fontFamily: "Roboto Slab, serif" }}
+        >
           Conditions Treated
         </h2>
-        <motion.div
-          ref={ref}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
-          variants={container}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-        >
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {Conditions.map((s) => (
-            <motion.div
+            <div
               key={s.id}
-              className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
-              variants={item}
+              className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 px-6 py-5 flex flex-col gap-2"
             >
-              <div className="text-4xl font-extrabold text-[#07a496] mb-2">
-                {s.number}
-              </div>
-              <div className="text-lg font-semibold text-gray-700">
-                {s.title}
-              </div>
-            </motion.div>
+              <Link href={s.link}>
+                <div className="text-3xl font-bold text-[#07a496]">
+                  {s.number}
+                </div>
+                <div className="text-lg text-gray-800 font-medium leading-snug">
+                  {s.title}
+                </div>
+              </Link>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

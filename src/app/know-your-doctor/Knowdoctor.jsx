@@ -70,9 +70,11 @@ const Knowdoctor = () => {
         </div>
       </div>
 
+
+
       <div className="lg:grid lg:grid-cols-12 justify-evenly gap-6 bg-cyan-500 py-10 px-10">
         {/* Mission Section */}
-        <div className="col-span-5 flex flex-col items-center text-center">
+        <div className="col-span-5 flex flex-col items-center text-center lg:px-10">
           <Image
             src="/About/mission.png"
             width={200}
@@ -96,7 +98,7 @@ const Knowdoctor = () => {
         </div>
 
         {/* Vision Section */}
-        <div className="col-span-5 flex flex-col items-center text-center mt-10 lg:mt-0">
+        <div className="col-span-5 flex flex-col items-center text-center mt-10 lg:mt-0 lg:px-10">
           <Image
             src="/About/vision.png"
             width={200}
@@ -115,6 +117,8 @@ const Knowdoctor = () => {
           </p>
         </div>
       </div>
+
+
 
       <h1 className="lg:text-5xl font-semibold md:text-3xl text-3xl px-20 lg:py-10 py-5 text-center" style={{ fontFamily: "Roboto Slab, serif" }}>
         Frequently Asked Questions

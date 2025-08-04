@@ -4,13 +4,9 @@ import Header from "@/components/common/Header/Header";
 import Footer from "@/components/common/Footer/Footer";
 // import { FaYoutube } from "react-icons/fa"; // Import the YouTube icon from react-icons
 import Script from "next/script";
+import SocialLinks from "@/components/SocialLinks";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "Dr. Bhupendra Pratap Bharti",
-  description: "",
-};
 
 export default function RootLayout({ children }) {
   return (
@@ -41,6 +37,7 @@ export default function RootLayout({ children }) {
         </a> */}
 
         {children}
+        <SocialLinks />
         <Footer />
       </body>
     </html>
