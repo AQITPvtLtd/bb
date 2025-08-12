@@ -24,9 +24,9 @@ const Footer = () => {
           <ul className="space-y-3">
             {[
               { href: "/", label: "Home" },
-              { href: "/knowDoctor", label: "Know Your Doctor" },
-              { href: "/media/photoGallery", label: "Photo Gallery" },
-              { href: "/media/videoGallery", label: "Video Gallery" },
+              { href: "/know-your-doctor", label: "Know Your Doctor" },
+              { href: "/media/photo-gallery", label: "Photo Gallery" },
+              { href: "/media/video-gallery", label: "Video Gallery" },
               // { href: "/", label: "FAQs" },
               { href: "/contactus", label: "Contact Us" },
             ].map((item, index) => (
@@ -51,20 +51,20 @@ const Footer = () => {
           <ul className="space-y-3">
             {[
               {
-                href: "/special-services/minimally",
+                href: "/specialty-services/minimally-invasive-spine-surgery",
                 label: "Minimally Invasive Spine Surgery",
               },
               {
-                href: "/special-services/artificial",
+                href: "/specialty-services/artificial-disc-replacement",
                 label: "Artificial Disc Replacement",
               },
               {
-                href: "/special-services/spineDeformity",
+                href: "/specialty-services/spine-deformity-correction",
                 label: "Spine Deformity Correction",
               },
-              { href: "/special-services/spinal", label: "Spinal Tumors" },
+              { href: "/specialty-services/spine-tumors", label: "Spinal Tumors" },
               {
-                href: "/special-services/traumatic",
+                href: "/specialty-services/traumatic-conditions-of-spine",
                 label: "Traumatic Conditions of Spine",
               },
             ].map((item, index) => (
@@ -89,11 +89,11 @@ const Footer = () => {
           <ul className="space-y-3">
             {[
               {
-                href: "/conditions-treated/degenerative",
+                href: "/conditions-treated/degenerative-spine-conditions",
                 label: "Degenerative Spine Conditions",
               },
               {
-                href: "/conditions-treated/spinalCanal",
+                href: "/conditions-treated/spinal-canal-stenosis-decompression",
                 label: "Spinal Canal Stenosis Decompression",
               },
               {
@@ -101,11 +101,11 @@ const Footer = () => {
                 label: "Spondylolisthesis",
               },
               {
-                href: "/conditions-treated/adult",
+                href: "/conditions-treated/adult-degenerative-deformities",
                 label: "Adult Degenerative Deformities",
               },
               {
-                href: "/conditions-treated/spinal",
+                href: "/conditions-treated/spinal-fusion-surgery",
                 label: "Spinal Fusion Surgery",
               },
             ].map((item, index) => (

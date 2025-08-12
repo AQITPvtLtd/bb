@@ -2,10 +2,10 @@ import React from "react";
 import Detailedblog from "./Detailedblog";
 
 const page = ({ params }) => {
-  const id = params.url;
+  const url = params.url;
   return (
     <div>
-      <Detailedblog id={id} />
+      <Detailedblog url={url} />
     </div>
   );
 };
