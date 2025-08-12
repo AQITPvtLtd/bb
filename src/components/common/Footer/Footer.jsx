@@ -28,7 +28,7 @@ const Footer = () => {
               { href: "/media/photo-gallery", label: "Photo Gallery" },
               { href: "/media/video-gallery", label: "Video Gallery" },
               // { href: "/", label: "FAQs" },
-              { href: "/contactus", label: "Contact Us" },
+              { href: "/contact-us", label: "Contact Us" },
             ].map((item, index) => (
               <li key={index}>
                 <Link
