@@ -76,37 +76,43 @@ const Header = () => {
           <div className="max-w-lg lg:mx-auto pt-4 mx-2">
             <div className="flex items-center justify-center space-x-10">
               <div className="flex space-x-4">
-                <div className="text-white text-xl bg-primary rounded-full p-1">
+                {/* Facebook */}
+                <div className="text-xl bg-white rounded-full p-1">
                   <Link
                     href="https://www.facebook.com/profile.php?id=100066588493905"
                     target="__blank"
-                    className=""
                   >
-                    <FaFacebookF size={20} className="" />
+                    <FaFacebookF size={20} className="text-[#1877F2]" />
                   </Link>
                 </div>
-                <div className="text-white text-xl bg-primary rounded-full p-1">
+
+                {/* Instagram */}
+                <div className="text-xl bg-white rounded-full p-1">
                   <Link
                     href="https://www.instagram.com/drbhupendrabharti/?hl=en"
                     target="__blank"
                   >
-                    <FaInstagram className=" bg-primary" />
+                    <FaInstagram size={20} className="text-[#E4405F]" />
                   </Link>
                 </div>
-                <div className="text-white text-xl bg-primary rounded-full p-1">
+
+                {/* LinkedIn */}
+                <div className="text-xl bg-white rounded-full p-1">
                   <Link
                     href="https://www.linkedin.com/company/dr-bhupendra-bharti/"
                     target="__blank"
                   >
-                    <FaLinkedinIn className=" bg-primary" />
+                    <FaLinkedinIn size={20} className="text-[#0077B5]" />
                   </Link>
                 </div>
-                <div className="text-white text-xl bg-primary rounded-full p-1">
+
+                {/* YouTube */}
+                <div className="text-xl bg-white rounded-full p-1">
                   <Link
                     href="https://www.youtube.com/@shreshtha.spine_1"
                     target="__blank"
                   >
-                    <FaYoutube className=" bg-primary" />
+                    <FaYoutube size={20} className="text-[#FF0000]" />
                   </Link>
                 </div>
               </div>

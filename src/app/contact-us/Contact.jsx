@@ -133,15 +133,6 @@ const Contact = () => {
           </h1>
 
           <div className="lg:col-span-3 col-span-12 lg:col-start-10 mt-8 lg:mt-0">
-            {/* <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14007.576114090743!2d77.3090026!3d28.632938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb3558b5ac9d%3A0x8d590e3c6772a3c5!2sMax%20Super%20Speciality%20Hospital%2C%20Patparganj!5e0!3m2!1sen!2sin!4v1726658027067!5m2!1sen!2sin"
-              width="100%"
-              height="350"
-              style={{ border: 0 }}
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe> */}
-
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.88259577845!2d77.30471724732683!3d28.633280613108198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfba32e6d9de1%3A0xc08f969098a283ba!2sDr.%20Bhupendra%20Pratap%20Bharti!5e0!3m2!1sen!2sin!4v1728040420595!5m2!1sen!2sin"
               width="100%"
@@ -150,7 +141,7 @@ const Contact = () => {
               allowFullScreen=""
               className="rounded-md"
               loading="lazy"
-              // referrerpolicy="no-referrer-when-downgrade"
+            // referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

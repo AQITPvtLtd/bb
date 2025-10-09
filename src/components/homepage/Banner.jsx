@@ -24,8 +24,8 @@ function Banner() {
               alt="banner-image"
               className="w-full h-[80vh] md:h-[95vh] object-cover"
             />
-            <div className="grid md:grid-cols-12 lg:gap-20 absolute top-5 left-4 md:left-5 w-[90%] md:w-auto items-center">
-              <div className="col-start-1 col-span-6 gap-6 w-full max-w-6xl bg-black bg-opacity-40 lg:h-[44%] sm:h-[60%] mt-32 lg:mt-0 p-6 md:p-10 text-white rounded-lg">
+            <div className="grid md:grid-cols-12 lg:gap-20 absolute top-40 left-4 md:left-5 w-[90%] md:w-auto items-center">
+              <div className="col-start-1 col-span-6 gap-6 w-full max-w-6xl bg-black bg-opacity-40 lg:h-[100%] sm:h-[60%] mt-32 lg:mt-0 p-6 md:p-10 text-white rounded-lg">
                 {/* Left Content */}
                 <div className="flex flex-col items-start">
                   <h1
@@ -47,9 +47,9 @@ function Banner() {
                   </div>
                 </div>
               </div>
-              <div className="col-start-7 col-span-5 md:block hidden">
+              {/* <div className="col-start-7 col-span-5 md:block hidden">
                 <Form />
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

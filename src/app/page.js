@@ -1,6 +1,7 @@
 import Banner from "@/components/homepage/Banner";
 import Blog from "@/components/homepage/Blog";
 import ConditionsTreated from "@/components/homepage/ConditionsTreated";
+import Contact from "@/components/homepage/Contact";
 import DrBhupendra from "@/components/homepage/DrBhupendra";
 import Services from "@/components/homepage/Services";
 import VideoGallery from "@/components/homepage/VideoGallery";
@@ -36,6 +37,7 @@ export default function Home() {
       <Services />
       <ConditionsTreated />
       <Blog />
+      <Contact />
       <VideoGallery />
     </div>
   );
