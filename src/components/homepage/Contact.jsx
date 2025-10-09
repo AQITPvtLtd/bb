@@ -8,7 +8,8 @@ const Contact = () => {
 
                 {/* Map Section */}
                 <div>
-                    <h1 className="text-3xl font-semibold text-gray-800 mb-4">
+                    <h1 className="text-3xl font-semibold text-gray-800 mb-4"
+                       style={{ fontFamily: "Roboto Slab, serif" }}>
                         Location Map
                     </h1>
                     <iframe
