@@ -76,7 +76,7 @@ const Knowdoctor = () => {
         {/* Mission Section */}
         <div className="col-span-5 flex flex-col items-center text-center lg:px-10">
           <Image
-            src="/About/mission.png"
+            src="/About/mission.webp"
             width={200}
             height={200}
             alt="Our Mission"
@@ -100,7 +100,7 @@ const Knowdoctor = () => {
         {/* Vision Section */}
         <div className="col-span-5 flex flex-col items-center text-center mt-10 lg:mt-0 lg:px-10">
           <Image
-            src="/About/vision.png"
+            src="/About/vision.webp"
             width={200}
             height={200}
             alt="Our Vision"
