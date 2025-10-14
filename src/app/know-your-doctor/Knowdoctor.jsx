@@ -14,7 +14,7 @@ const Knowdoctor = () => {
     <div className="">
       <div className="relative">
         <Image
-          src="/knowdoctor/about.jpg"
+          src="/knowdoctor/about.png"
           width={1000}
           height={1000}
           className="w-full h-[200px] object-cover"
