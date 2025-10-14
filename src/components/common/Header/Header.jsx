@@ -10,6 +10,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { FcGoogle } from "react-icons/fc";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -113,6 +114,16 @@ const Header = () => {
                     target="__blank"
                   >
                     <FaYoutube size={20} className="text-[#FF0000]" />
+                  </Link>
+                </div>
+
+                {/* YouTube */}
+                <div className="text-xl bg-white rounded-full p-1">
+                  <Link
+                    href="https://maps.app.goo.gl/o6Dg6vGi4Rghjjay7"
+                    target="__blank"
+                  >
+                    <FcGoogle size={20} className="" />
                   </Link>
                 </div>
               </div>

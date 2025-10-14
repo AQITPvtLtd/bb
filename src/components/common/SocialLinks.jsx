@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { FcGoogle } from "react-icons/fc";
 
 export default function SocialLinks() {
     const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +74,17 @@ export default function SocialLinks() {
                                 <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
                             </svg>
                         </span>
+                    </Link>
+                </div>
+
+                {/* Google */}
+                <div className="group relative text-3xl w-max cursor-pointer transition-transform duration-500 hover:scale-125">
+                    <Link
+                        href="https://maps.app.goo.gl/o6Dg6vGi4Rghjjay7"
+                        role="button"
+                        target="_blank"
+                    >
+                        <FcGoogle />
                     </Link>
                 </div>
 
