@@ -135,19 +135,12 @@ const Footer = () => {
             Medicine */}
             Orthopaedic Spine surgery
           </p>
-          <div className="mt-4">
-            <h4 className="font-bold">OPD Schedule</h4>
-
-            <p className="flex gap-2">
-              <FaClock className="text-xl mt-1" /> Mon/Tues/Thurs/Sat: 10am - 2pm , Wed: 10am - 12pm
-            </p>
-          </div>
           <div className="mt-4 space-y-3">
             <Link
               href="tel:+91-9205138507"
               className="flex gap-2 hover:text-gray-300 transition duration-300"
             >
-              <IoMdCall className="text-xl mt-1" /> For Appointment: +91-92051 38507
+              <IoMdCall className="text-xl mt-1" /> For Appointment: <br class="hidden md:block lg:hidden" /> +91-92051 38507
             </Link>
 
             <Link
@@ -156,6 +149,13 @@ const Footer = () => {
             >
               <MdEmail className="text-xl mt-1" /> Email: drbhupendrabharti@gmail.com
             </Link>
+          </div>
+          <div className="mt-4">
+            <h4 className="font-bold">OPD Schedule</h4>
+
+            <p className="flex gap-2">
+              <FaClock className="text-xl mt-1" /> Mon/Tues/Thurs/Sat: 10am - 2pm , Wed: 10am - 12pm
+            </p>
           </div>
         </div>
       </div>

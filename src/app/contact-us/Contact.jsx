@@ -33,7 +33,7 @@ const Contact = () => {
         <div className="col-start-2 col-span-5 bg-white shadow-lg rounded-lg p-8 space-y-6 overflow-hidden">
           <h1 className="text-2xl font-semibold text-gray-800"
             style={{ fontFamily: "Roboto Slab, serif" }}>
-            Dr. Bhupendra Pratap Bharti
+            Max Hospital
           </h1>
           <p className="font-semibold text-gray-600">
             Consultant Institute for Bone, Joint Replacement, Orthopedics Spine
@@ -86,10 +86,6 @@ const Contact = () => {
             style={{ fontFamily: "Roboto Slab, serif" }}>
             Noida Clinic
           </h1>
-          <h1 className="text-2xl font-semibold text-gray-800"
-            style={{ fontFamily: "Roboto Slab, serif" }}>
-            Dr. Bhupendra Pratap Bharti
-          </h1>
 
           <div className="flex items-start space-x-2 text-gray-700 mt-6">
             <FaLocationDot className="mt-1 text-xl" />
@@ -133,7 +129,7 @@ const Contact = () => {
         <div className="col-start-2 col-span-4 p-4 md:p-6 lg:p-8 overflow-hidden">
           <h1 className="text-3xl font-semibold text-gray-800 py-3"
             style={{ fontFamily: "Roboto Slab, serif" }}>
-            Location Map
+            Our Location
           </h1>
 
           <div className="lg:col-span-3 col-span-12 lg:col-start-10 mt-8 lg:mt-0">
