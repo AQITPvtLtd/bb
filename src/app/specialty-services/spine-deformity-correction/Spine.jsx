@@ -60,7 +60,7 @@ const Spine = () => {
                     </p>
                   </div>
                   <Image
-                    src="/Spine/spinal-deformities.jpg"
+                    src="/Spine/spinal-deformities.png"
                     height={10000}
                     width={10000}
                     className=""

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import { getVideos } from "@/services/getData";
 import { motion } from "framer-motion";
 
@@ -65,6 +66,14 @@ const Videogallery = () => {
             ))}
           </div>
         )}
+      </div>
+      <div className="w-full flex justify-center mt-10">
+        <Link
+          href="/contact-us#contact-form"
+          className="bg-[#07a496] text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          Contact Us
+        </Link>
       </div>
     </div>
   );

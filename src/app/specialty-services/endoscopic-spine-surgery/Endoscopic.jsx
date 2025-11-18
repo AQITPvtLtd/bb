@@ -79,7 +79,7 @@ const Endoscopic = () => {
 
               <div className="flex-shrink-0">
                 <Image
-                  src="/Endoscopic/photo1.jpg"
+                  src="/Endoscopic/photo1.png"
                   height={300}
                   width={500}
                   alt="Endoscopic Spine Procedure Image"
@@ -94,21 +94,21 @@ const Endoscopic = () => {
               </h2>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Image
-                  src="/Endoscopic/one.jpg"
+                  src="/Endoscopic/one.png"
                   height={350}
                   width={350}
                   alt="Endoscopic Spine Surgery Image 1"
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/Endoscopic/two.jpg"
+                  src="/Endoscopic/two.png"
                   height={350}
                   width={350}
                   alt="Endoscopic Spine Surgery Image 2"
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/Endoscopic/three.jpg"
+                  src="/Endoscopic/three.png"
                   height={350}
                   width={350}
                   alt="Endoscopic Spine Surgery Image 3"

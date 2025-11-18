@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { IoMdAdd } from "react-icons/io";
 
 const Knowdoctor = () => {
@@ -118,7 +119,14 @@ const Knowdoctor = () => {
         </div>
       </div>
 
-
+      <div className="w-full flex justify-center mt-10">
+        <Link
+          href="/contact-us#contact-form"
+          className="bg-[#07a496] text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          Contact Us
+        </Link>
+      </div>
 
       <h1 className="lg:text-5xl font-semibold md:text-3xl text-3xl px-20 lg:py-10 py-5 text-center" style={{ fontFamily: "Roboto Slab, serif" }}>
         Frequently Asked Questions

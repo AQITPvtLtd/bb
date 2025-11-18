@@ -146,7 +146,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="col-span-7 flex justify-center items-center py-10 overflow-hidden">
+        <div id="contact-form" className="col-span-7 flex justify-center items-center py-10 overflow-hidden">
           <Form />
         </div>
       </div>
